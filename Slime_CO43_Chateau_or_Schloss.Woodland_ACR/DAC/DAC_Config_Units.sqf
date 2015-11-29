@@ -971,6 +971,38 @@ _Unit_Pool_T = [
 _Unit_Pool_A = [];
 };
 //-------------------------------------------------------------------------------------------------
+// French
+case 27:
+{
+_Unit_Pool_S = [
+	//Vehicle crewman, Pilot, Group Leader
+	"R3F_APSO_PILOT_VEHI",
+	"R3F_APSO_PILOT_HELI",
+	"R3F_FANTASSIN_SOUSOFF_B",
+	"R3F_FANTASSIN_300_B",
+	"R3F_FANTASSIN_600_B",
+	"R3F_FANTASSIN_AT_B",
+	"R3F_FANTASSIN_MEDIC_B",
+	"R3F_FANTASSIN_MG_B"
+];
+_Unit_Pool_V = [
+	"R3F_FENNEC",
+	"R3F_FENNEC_HMG",
+	"R3F_HEMTT_trans"
+];
+_Unit_Pool_T = [
+	"R3F_PANDUR",
+	"R3F_WARRIOR"
+];
+_Unit_Pool_A = [
+	"R3F_AH6_ARMED",
+	"R3F_AH6",
+	"R3F_LYNX_ARMED",
+	"R3F_LYNX",
+	"R3F_MERLIN"
+];
+};
+//-------------------------------------------------------------------------------------------------
   Default
   {
     if(DAC_Basic_Value != 5) then
