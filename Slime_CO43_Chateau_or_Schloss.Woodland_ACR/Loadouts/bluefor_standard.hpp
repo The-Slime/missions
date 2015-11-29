@@ -36,8 +36,8 @@ class blu_f {
     #define WEST_AT_MAG "BWA3_Pzf3_IT"
 
 	// MMG
-    #define WEST_MMG "MMG_02_black_F"
-    #define WEST_MMG_MAG "130Rnd_338_Mag:5"
+    #define WEST_MMG "BWA3_MG4"
+    #define WEST_MMG_MAG "BWA3_200Rnd_556x45:3","BWA3_200Rnd_556x45_Tracer:2"
 
 	// MAT
     #define WEST_MAT "UK3CB_BAF_Javelin_Slung_Tube"
@@ -181,15 +181,17 @@ class blu_f {
 // ====================================================================================
 // Support Infantry
 
-    class B_support_MG_F: B_Soldier_F {// MMG
-        weapons[] = {WEST_MMG};
+    class B_Competitor_F: B_Soldier_F {// MMG
+        backpack[] = {"BWA3_Carryall_Fleck"};
+		weapons[] = {WEST_MMG};
         magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
         handguns[] = {WEST_PISTOL}; /// randomized
         attachments[] = {"BWA3_optic_EOTech_Mag_Off"};
     };
 
     class B_support_AMG_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
-        backpackItems[] += {WEST_MMG_MAG};
+        backpack[] = {"BWA3_Carryall_Fleck"};
+		backpackItems[] += {WEST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
         items[] += {"ACRE_PRC148"};
     };
