@@ -101,14 +101,7 @@ class blu_f {
 // ====================================================================================
 // Leadership INF and Groupies
 
-    class B_soldier_PG_F { //testing class for glmags
-		uniform[] = {"BWA3_Uniform_Fleck"};  /// randomized
-        vest[] = {"BWA3_Vest_Rifleman1_Fleck"}; /// randomized
-		backpack[] = {"BWA3_AssaultPack_Fleck"}; /// randomized
-		backpackItems[] = {WEST_GLRIFLE_MAG_HEtest,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE};
-	};
-	
-	class B_Soldier_F {// rifleman
+    class B_Soldier_F {// rifleman
         uniform[] = {"BWA3_Uniform_Fleck","BWA3_Uniform2_Fleck"};  /// randomized
         vest[] = {"BWA3_Vest_Rifleman1_Fleck"}; /// randomized
         headgear[] = {"BWA3_MICH_Fleck"}; /// randomized
@@ -131,8 +124,7 @@ class blu_f {
         handguns[] = {WEST_PISTOL}; /// randomized
         backpackItems[] += {"ACE_key_west", "ACRE_PRC117F",WEST_GLRIFLE_MAG_HEtest,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","ACE_Vector"};
-        items[] = {"ACE_MapTools","ACRE_PRC148"};
-    };
+        items[] = {"ACE_MapTools","ACRE_PRC148"}; };
 
     class B_Soldier_SL_F: B_Officer_F {// SL
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","Binocular"};
