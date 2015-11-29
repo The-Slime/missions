@@ -16,7 +16,7 @@ class blu_f {
     #define WEST_GLRIFLE_MAG "BWA3_30Rnd_556x45_G36:8","BWA3_30Rnd_556x45_G36_Tracer:2"
     #define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
     #define WEST_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
-	#define WEST_GLRIFLE_MAG_HEtest "BWA3_30Rnd_556x45_G36:8"
+	#define WEST_GLRIFLE_MAG_HEtest "1Rnd_HE_Grenade_shell:8"
     #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareWhite_F:2"
 
 	//Carbine
@@ -105,7 +105,7 @@ class blu_f {
 		uniform[] = {"BWA3_Uniform_Fleck"};  /// randomized
         vest[] = {"BWA3_Vest_Rifleman1_Fleck"}; /// randomized
 		backpack[] = {"BWA3_AssaultPack_Fleck"}; /// randomized
-		magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HEtest,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_PISTOL_MAG,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_SMOKE_GREEN};
+		backpackItems[] = {WEST_GLRIFLE_MAG_HEtest,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE};
 	};
 	
 	class B_Soldier_F {// rifleman
@@ -125,10 +125,11 @@ class blu_f {
 
     class B_officer_F: B_Soldier_F {// CO and DC
         vest[] = {"BWA3_Vest_Grenadier_Fleck"}; /// randomized
+		backpack[] = {"BWA3_Kitbag_Fleck"};
 		weapons[] = {WEST_GLRIFLE};
-        magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HEtest,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_PISTOL_MAG,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_SMOKE_GREEN};
+        magazines[] = {WEST_GLRIFLE_MAG,WEST_PISTOL_MAG,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_SMOKE_GREEN};
         handguns[] = {WEST_PISTOL}; /// randomized
-        backpackItems[] += {"ACE_key_west", "ACRE_PRC117F"};
+        backpackItems[] += {"ACE_key_west", "ACRE_PRC117F",WEST_GLRIFLE_MAG_HEtest,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","ACE_Vector"};
         items[] = {"ACE_MapTools","ACRE_PRC148"};
     };
@@ -158,8 +159,8 @@ class blu_f {
     class B_Soldier_TL_F: B_Soldier_F {// FTL
         vest[] = {"BWA3_Vest_Grenadier_Fleck"};
 		weapons[] = {WEST_GLRIFLE};
-        magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HEtest,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_SMOKE_WHITE,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_GRENADE,WEST_SMOKE_WHITE};
-        backpackItems[] += {"ACE_key_west"};
+        magazines[] = {WEST_GLRIFLE_MAG,WEST_SMOKE_WHITE,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_GRENADE,WEST_SMOKE_WHITE};
+        backpackItems[] += {"ACE_key_west",WEST_GLRIFLE_MAG_HEtest,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE};
         linkedItems[] += {"ItemGPS","Binocular"};
     };
 
