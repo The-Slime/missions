@@ -160,6 +160,7 @@ class blu_f {
         weapons[] = {WEST_AR};
         magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
         handguns[] = {WEST_PISTOL}; /// randomized
+		attachments[] = {"BWA3_optic_RSAS","BWA3_acc_VarioRay_irlaser"};
     };
 
     class B_Soldier_AAR_F: B_Soldier_F {// AAR
