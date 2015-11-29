@@ -17,7 +17,8 @@ class Mission
 		"rhsusf_c_rg33",
 		"rhsusf_c_fmtv",
 		"aia_bohemia_config",
-		"A3_Characters_F_Beta"
+		"A3_Characters_F_Beta",
+		"A3_Characters_F_Gamma"
 	};
 	addOnsAuto[]=
 	{
@@ -26,6 +27,7 @@ class Mission
 		"dac_source",
 		"A3_Characters_F_BLUFOR",
 		"A3_Characters_F_Beta",
+		"A3_Characters_F_Gamma",
 		"r3f_acc",
 		"A3_Misc_F_Helpers",
 		"BWA3_Tiger",
@@ -665,7 +667,7 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={1539.066,326.11981,4948.1304};
+					position[]={1526.582,326.3425,4952.8809};
 					id=40;
 					side="WEST";
 					vehicle="B_crew_F";
@@ -678,7 +680,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={1541.0465,326.09644,4945.6294};
+					position[]={1528.5625,326.40057,4950.3799};
 					id=41;
 					side="WEST";
 					vehicle="B_crew_F";
@@ -690,7 +692,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={1543.777,326.02173,4945.395};
+					position[]={1531.293,326.32394,4950.1455};
 					id=42;
 					side="WEST";
 					vehicle="B_soldier_repair_F";
@@ -709,7 +711,7 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={1551.5231,325.82144,4944.5083};
+					position[]={1552.4901,325.7204,4952.0732};
 					id=43;
 					side="WEST";
 					vehicle="B_crew_F";
@@ -722,7 +724,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={1553.5035,325.77878,4942.0122};
+					position[]={1554.4706,325.73529,4949.5771};
 					id=44;
 					side="WEST";
 					vehicle="B_crew_F";
@@ -734,7 +736,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={1556.2362,325.70975,4941.7778};
+					position[]={1557.2032,325.68759,4949.3428};
 					id=45;
 					side="WEST";
 					vehicle="B_soldier_repair_F";
@@ -855,7 +857,7 @@ class Mission
 					azimut=180;
 					id=52;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_soldier_PG_F";
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
