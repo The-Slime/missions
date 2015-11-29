@@ -7,9 +7,9 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Das Slime
 <br/><br/>
-Made with Wavelength.
+Made with Wavelength, ja?
 "]];
 
 // ====================================================================================
@@ -19,7 +19,7 @@ Made with Wavelength.
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+I'm probably forgetting something...
 "]];
 
 // ====================================================================================
@@ -67,19 +67,27 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 <font size='18'>COMMANDER'S INTENT</font>
 <br/>
-*** Insert very short summary of plan here. ***
+Assault towards and secure the castle to the east of our position.
 <br/><br/>
 <font size='18'>MOVEMENT PLAN</font>
 <br/>
-*** Insert movement instructions here. ***
+CONTENTS OF MOTOR POOL: <br/>
+4x M1083 high capacity personnel truck
+4x RG-33 (2 armed with HMG)
+2x Puma IFV
+4x ATV<br/><br/>
+CONTENTS OF HELICOPTER POOL:<br>
+2x Tiger RMK (universal loadout)
+2x AH-6M-M
+Turnaround facilities available
 <br/><br/>
 <font size='18'>FIRE SUPPORT PLAN</font>
 <br/>
-*** Insert fire support instructions here. ***
+Available fire support includes attack helicopters, Puma IFVs, MMG, MAT, and SAM teams.
 <br/><br/>
 <font size='18'>SPECIAL TASKS</font>
 <br/>
-*** Insert instructions for specific units here. ***
+No special tasking available.
 "]];
 
 // ====================================================================================
@@ -89,7 +97,7 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-*** Insert the mission here. ***
+Push east, destroying enemy forces and securing Objective Strauß.
 "]];
 
 // ====================================================================================
@@ -97,17 +105,15 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 // NOTES: SITUATION
 // The code below creates the situation sub-section of notes.
 
-_sit = player createDiaryRecord ["diary", ["Situation","
+_sit = player createDiaryRecord ["diary", ["Forces","
 <br/>
-*** Insert general information about the situation here.***
-<br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-*** Insert information about enemy forces here.***
+Satellite imaging displays about a company of infantry as well as several armored vehicles.
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
-*** Insert information about friendly forces here.***
+Platoon of Bundeswehr with supporting assets available.
 "]];
 
 // ====================================================================================
