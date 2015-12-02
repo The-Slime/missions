@@ -166,7 +166,7 @@ class blu_f {
 
     class B_Soldier_AAR_F: B_Soldier_F {// AAR
         backpackItems[] += {WEST_AR_MAG2};
-        attachments[] = {"BWA3_optic_ZO4x30"};
+        attachments[] = {"BWA3_optic_ZO4x30","BWA3_acc_VarioRay_irlaser"};
         linkedItems[] += {"Binocular"};
     };
 
