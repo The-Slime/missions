@@ -72,13 +72,13 @@ Assault towards and secure the castle to the east of our position.
 <font size='18'>MOVEMENT PLAN</font>
 <br/>
 CONTENTS OF MOTOR POOL: <br/>
-4x M1083 high capacity personnel truck
-4x RG-33 (2 armed with HMG)
-2x Puma IFV
+4x M1083 high capacity personnel truck<br/>
+4x RG-33 (2 armed with HMG)<br/>
+2x Puma IFV<br/>
 4x ATV<br/><br/>
-CONTENTS OF HELICOPTER POOL:<br>
-2x Tiger RMK (universal loadout)
-2x AH-6M-M
+CONTENTS OF HELICOPTER POOL:<br/>
+2x Tiger RMK (universal loadout)<br/>
+2x AH-6M-M<br/>
 Turnaround facilities available
 <br/><br/>
 <font size='18'>FIRE SUPPORT PLAN</font>
