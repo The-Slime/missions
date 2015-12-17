@@ -57,8 +57,8 @@ class ind_f {
     #define IND_SMG_MAG "30Rnd_9x21_Mag:6"
 
 	// Pistol
-    #define IND_PISTOL "hgun_ACPC2_F"
-    #define IND_PISTOL_MAG "9Rnd_45ACP_Mag:4"
+    #define IND_PISTOL "rhs_weap_makarov_pmm"
+    #define IND_PISTOL_MAG "rhs_mag_9x18_12_57N181S:4"
 
 	// Grenades, Smoke and Frag
     #define IND_GRENADE "HandGrenade:2"
@@ -95,18 +95,16 @@ class ind_f {
 // Leadership INF and Groupies
 
     class I_Soldier_F {// rifleman
-        uniform[] = {"U_I_CombatUniform"};  /// randomized
-        vest[] = {"V_PlateCarrierIA1_dgtl","V_Chestrig_oli","V_PlateCarrierIA1_dgtl"}; /// randomized
-        headgear[] = {"H_HelmetIA"}; /// randomized
-        backpack[] = {"B_AssaultPack_dgtl"}; /// randomized
+        uniform[] = {"TRYK_U_B_PCUHsW6"};  /// randomized
+        vest[] = {"TRYK_V_Bulletproof"}; /// randomized
+        headgear[] = {"TRYK_H_woolhat_WH"}; /// randomized
+        backpack[] = {"MNP_B_WB_AP"}; /// randomized
         backpackItems[] = {"MEDICAL_STANDARD","ACE_IR_Strobe_item"};
-        weapons[] = {IND_RIFLE}; /// randomized
         launchers[] = {}; /// randomized
-        handguns[] = {}; /// randomized
-        magazines[] = {IND_RIFLE_MAG,IND_GRENADE,IND_SMOKE_WHITE};
+        handguns[] = {IND_PISTOL}; /// randomized
+        magazines[] = {IND_PISTOL_MAG};
         items[] = {"ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
-        attachments[] = {"optic_ACO_grn"};
     };
 
     class I_officer_F: I_Soldier_F {// CO and DC
@@ -157,9 +155,7 @@ class ind_f {
     };
 
     class I_Soldier_AAR_F: I_Soldier_F {// AAR
-        backpackItems[] += {IND_AR_MAG2};
-        attachments[] = {"optic_MRCO"};
-        linkeditems[] += {"Binocular"};
+
     };
 
     class I_Soldier_A_F: I_Soldier_AAR_F {// AAR
