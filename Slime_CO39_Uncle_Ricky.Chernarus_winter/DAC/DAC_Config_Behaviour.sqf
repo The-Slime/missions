@@ -32,7 +32,7 @@ switch (_this select 0) do
 		_setSearch  = ["40 + ((skill _leader) * 150)","50 + ((skill _leader) * 50)"];
 		_setSupport = [1,1];//support for other zones //opfor arti
 		_setJoin    = 2;
-		_setEmpVeh  = [[150,100],[150,100]];
+		_setEmpVeh  = [[150,0],[150,100]];
 		_setSupTime = ["5 + ((skill _unit) * (5 * DAC_AI_Level))",2,5];
 		_setHidTime = ["(((10 * DAC_AI_Level) + ((skill _leader) * 50)) / ((count units _group) + 1))"];
 	};
