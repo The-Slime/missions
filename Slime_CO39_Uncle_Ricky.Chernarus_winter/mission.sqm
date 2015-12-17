@@ -71,7 +71,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=22;
+		items=17;
 		class Item0
 		{
 			side="WEST";
@@ -545,128 +545,90 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=1;
+				items=6;
 				class Item0
 				{
 					position[]={13360.456,64.669205,12013.679};
 					azimut=-228.017;
+					special="NONE";
 					id=33;
 					side="GUER";
 					vehicle="I_Soldier_AAR_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
+					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_A1_AAR";
 					description="CIA Cell Leader";
 				};
-			};
-		};
-		class Item11
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item1
 				{
 					position[]={13361.226,64.734261,12011.401};
 					azimut=129.98801;
+					special="NONE";
 					id=34;
 					side="GUER";
 					vehicle="I_Soldier_AAR_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="UnitIND_A2_AAR";
 					description="CIA Cell Member";
 				};
-			};
-		};
-		class Item12
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item2
 				{
 					position[]={13361.111,64.791481,12008.84};
 					azimut=126.183;
+					special="NONE";
 					id=35;
 					side="GUER";
 					vehicle="I_Soldier_AAR_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="UnitIND_A3_AAR";
 					description="CIA Cell Member";
 				};
-			};
-		};
-		class Item13
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item3
 				{
 					position[]={13365.347,64.672935,12008.876};
 					azimut=132.383;
+					special="NONE";
 					id=36;
 					side="GUER";
 					vehicle="I_Soldier_AAR_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="UnitIND_B1_AAR";
 					description="CIA Cell Member";
 				};
-			};
-		};
-		class Item14
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item4
 				{
 					position[]={13363.68,64.796013,12006.693};
 					azimut=126.994;
+					special="NONE";
 					id=37;
 					side="GUER";
 					vehicle="I_Soldier_AAR_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="UnitIND_B2_AAR";
 					description="CIA Cell Member";
 				};
-			};
-		};
-		class Item15
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item5
 				{
 					position[]={13361.127,64.897331,12005.09};
 					azimut=125.717;
+					special="NONE";
 					id=38;
 					side="GUER";
 					vehicle="I_Soldier_AAR_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="UnitIND_B3_AAR";
 					description="CIA Cell Member";
 				};
 			};
 		};
-		class Item16
+		class Item11
 		{
 			side="CIV";
 			class Vehicles
@@ -686,7 +648,7 @@ class Mission
 				};
 			};
 		};
-		class Item17
+		class Item12
 		{
 			side="CIV";
 			class Vehicles
@@ -706,7 +668,7 @@ class Mission
 				};
 			};
 		};
-		class Item18
+		class Item13
 		{
 			side="LOGIC";
 			class Vehicles
@@ -725,7 +687,7 @@ class Mission
 				};
 			};
 		};
-		class Item19
+		class Item14
 		{
 			side="LOGIC";
 			class Vehicles
@@ -742,7 +704,7 @@ class Mission
 				};
 			};
 		};
-		class Item20
+		class Item15
 		{
 			side="LOGIC";
 			class Vehicles
@@ -761,7 +723,7 @@ class Mission
 				};
 			};
 		};
-		class Item21
+		class Item16
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1428,20 +1390,111 @@ class Mission
 	};
 	class Sensors
 	{
-		items=1;
+		items=6;
 		class Item0
 		{
-			position[]={452.61176,51.034386,4146.6836};
-			a=300;
-			b=300;
+			position[]={5213.4287,219.28711,4198.6689};
+			a=25;
+			b=35;
+			angle=61.787498;
+			rectangular=1;
 			activationBy="LOGIC";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			text="This Generates 3 small squads of OPRFOR CSAT. They are in DAC ID Group 1";
-			name="z1";
-			expCond="true";
-			expActiv="fun =[""z1"",[1,0,0],[3,3,20,6],[],[],[],[0,0,0,0,1]] spawn DAC_Zone";
+			name="inf1";
+			expCond="time > 1";
+			expActiv="fun =[""inf1"",[2,0,0],[2,2,18,6],[],[],[],[0,0,0,0,1]] spawn DAC_Zone";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={4483.3711,228.03343,4563.3755};
+			a=100;
+			b=140;
+			angle=133.715;
+			rectangular=1;
+			activationBy="LOGIC";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="inf2";
+			expCond="time > 1";
+			expActiv="fun =[""inf2"",[2,0,0],[3,3,18,6],[],[],[],[0,0,0,0,1]] spawn DAC_Zone";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={5677.0322,89.178108,2975.0693};
+			a=30;
+			b=42;
+			angle=-23.938;
+			rectangular=1;
+			activationBy="LOGIC";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="inf3";
+			expCond="time > 1";
+			expActiv="fun =[""inf3"",[2,0,0],[2,2,18,6],[],[],[],[0,0,0,0,1]] spawn DAC_Zone";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={13270.681,23.835316,11571.266};
+			a=20;
+			b=28;
+			angle=-89.046097;
+			rectangular=1;
+			activationBy="LOGIC";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="cia1";
+			expCond="time > 1";
+			expActiv="fun =[""cia1"",[1,0,0],[2,2,6,3],[],[],[1,2,10,1,100,100],[0,0,0,0,1]] spawn DAC_Zone";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={13361.644,64.633888,12020.614};
+			a=15;
+			b=21;
+			angle=36.472198;
+			rectangular=1;
+			activationBy="LOGIC";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="ciaWP";
+			expCond="time > 1";
+			expActiv="fun =[""ciaWP"",[1,0,0],[25],[],[],[],[0,0,0,0,1]] spawn DAC_Zone";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={13859.521,22.846651,12036.136};
+			a=20;
+			b=28;
+			angle=-89.046097;
+			rectangular=1;
+			activationBy="LOGIC";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="cia2";
+			expCond="time > 1";
+			expActiv="fun =[""cia2"",[1,0,0],[2,2,6,3],[],[],[1,2,10,1,100,100],[0,0,0,0,1]] spawn DAC_Zone";
 			class Effects
 			{
 			};

@@ -169,7 +169,7 @@
     ["UnitIND_PLT", "IND PLT -"], \
     \
     ["UnitIND_ASL", "IND ASL -"], \
-    ["UnitIND_A1", "IND A1 -"], \
+    ["UnitIND_A1", "CIA -"], \
     ["UnitIND_A2", "IND A2 -"], \
     ["UnitIND_A3", "IND A3 -"], \
     \
