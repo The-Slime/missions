@@ -7,7 +7,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Slime
 <br/><br/>
 Made with Wavelength.
 "]];
@@ -19,7 +19,7 @@ Made with Wavelength.
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+Use the fuel truck to fuel the helicopter. In theory it should work. In practice expect it to not.
 "]];
 
 // ====================================================================================
@@ -67,19 +67,19 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 <font size='18'>COMMANDER'S INTENT</font>
 <br/>
-*** Insert very short summary of plan here. ***
+Find fuel for the helicopter so that it can be used to rescue the stranded operatives.
 <br/><br/>
 <font size='18'>MOVEMENT PLAN</font>
 <br/>
-*** Insert movement instructions here. ***
+Unfortunately we're short on vehicles so we will have to go by foot.
 <br/><br/>
 <font size='18'>FIRE SUPPORT PLAN</font>
 <br/>
-*** Insert fire support instructions here. ***
+No fire support is available.
 <br/><br/>
 <font size='18'>SPECIAL TASKS</font>
 <br/>
-*** Insert instructions for specific units here. ***
+The pilot probably won't have much to do until the chopper is fueled. Sucks for them.
 "]];
 
 // ====================================================================================
@@ -89,7 +89,7 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-*** Insert the mission here. ***
+Take an enemy fuel truck, use it to refuel the helicopter, and rescue the stranded CIA operatives.
 "]];
 
 // ====================================================================================
@@ -99,15 +99,15 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
+We have been quickly deployed to a post-Soviet state in order to assist in the extraction of a CIA cell that has been exposed. We touched down with no fuel left in the southwest of the province, while last we heard, they were in the northeast. We will need to find some fuel for the helicopter so that we can rescue them from whatever shit they're in.
 <br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-*** Insert information about enemy forces here.***
+Their emergency transmission mentioned that the locals had not taken too kindly to learning about American spies in their midst. Only fire if fired upon, etc etc.
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
-*** Insert information about friendly forces here.***
+We have but two squads of infantry and the pilot.
 "]];
 
 // ====================================================================================

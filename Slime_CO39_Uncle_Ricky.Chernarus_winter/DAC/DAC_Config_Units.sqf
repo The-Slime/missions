@@ -15,7 +15,7 @@ switch (_TypNumber) do
 {
 //-------------------------------------------------------------------------------------------------
 // OPFOR 		CSAT				OPF_F
-case 0:
+case 7:
 {
 _Unit_Pool_S = [
 	"O_crew_F","O_Helipilot_F","O_Soldier_TL_F", //Vehicle crewman, Pilot, Group Leader
@@ -270,7 +270,7 @@ _Unit_Pool_A = [];
 };
 //-------------------------------------------------------------------------------------------------
 // OPFOR			Rebels Red				OPF_G_F
-case 7:
+case 0:
 {
 _Unit_Pool_S = [
 	"O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_SL_F", //Vehicle crewman, Pilot, Group Leader

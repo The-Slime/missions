@@ -45,7 +45,7 @@ f_radios_settings_acre2_languages = [["english","English"],["russian","Russian"]
 // can define multiple
 f_radios_settings_acre2_language_blufor = ["english"];
 f_radios_settings_acre2_language_opfor = ["russian"];
-f_radios_settings_acre2_language_indfor = ["arabic"];
+f_radios_settings_acre2_language_indfor = ["english"];
 
 // ====================================================================================
 // Channel names and group defaults

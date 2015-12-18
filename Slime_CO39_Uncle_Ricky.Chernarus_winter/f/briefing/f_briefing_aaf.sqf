@@ -7,78 +7,9 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Slime
 <br/><br/>
 Made with Wavelength.
-"]];
-
-// ====================================================================================
-
-// NOTES: ADMINISTRATION
-// The code below creates the administration sub-section of notes.
-
-_adm = player createDiaryRecord ["diary", ["Administration","
-<br/>
-*** Insert information on administration and logistics here. ***
-"]];
-
-// ====================================================================================
-
-// NOTES: RADIOS
-// The code below creates the radios sub-section of notes.
-
-_radio = player createDiaryRecord ["diary", ["Radios","
-<br/>
-Radio List For Long Range (152 - 117F)
-<br/> 
-Channel 1 -  PLT. HQ, Squad Leads, Support
- <br/><br/>
-Radio List For Short Range (343) - GI and FTLs
-<br/>
-Channel 1 - Alpha Squad
-<br/>
-Channel 2 - Bravo Squad
-<br/> 
-Channel 3 - Charlie Squad
-<br/>
-Channel 4 - Delta Squad
-<br/>
-Channel 5 - Echo Squad
-<br/> 
-Channel 6 - Foxtrot Squad
-<br/><br/>
-Support Channels Intra-Element (343)
-<br/>
-From 10 to 19 for Air Support
-<br/>
-From 20 to 29 for Armor Support
-<br/>
-From 30 to 39 for Infantry Support (MMG etc)
-<br/>
-"]];
-
-// ====================================================================================
-
-// NOTES: EXECUTION
-// The code below creates the execution sub-section of notes.
-
-_exe = player createDiaryRecord ["diary", ["Execution","
-<br/>
-<font size='18'>COMMANDER'S INTENT</font>
-<br/>
-*** Insert very short summary of plan here. ***
-<br/><br/>
-<font size='18'>MOVEMENT PLAN</font>
-<br/>
-*** Insert movement instructions here. ***
-<br/><br/>
-<font size='18'>FIRE SUPPORT PLAN</font>
-<br/>
-*** Insert fire support instructions here. ***
-<br/><br/>
-<font size='18'>SPECIAL TASKS</font>
-<br/>
-*** Insert instructions for specific units here. ***
 "]];
 
 // ====================================================================================
@@ -88,25 +19,7 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-*** Insert the mission here. ***
+Shit has gone to hell. We've been found out by the local government. We had to abandon our safehouse in Berezino. Fortunately we managed to burn or escape with everything particularly incriminating but I'd bet Washington is on fire 
+about this either way. Fortunately there's an old army outpost at Black Lake that nobody else was using, so we've holed up there. Our last thing before destroying the equipment was to send out an emergency broadcast to any nearby friendlies about our 
+predicament; all we can do is shoot anything not flying an American flag until someone that is shows up to get us out of here.
 "]];
-
-// ====================================================================================
-
-// NOTES: SITUATION
-// The code below creates the situation sub-section of notes.
-
-_sit = player createDiaryRecord ["diary", ["Situation","
-<br/>
-*** Insert general information about the situation here.***
-<br/><br/>
-<font size='18'>ENEMY FORCES</font>
-<br/>
-*** Insert information about enemy forces here.***
-<br/><br/>
-<font size='18'>FRIENDLY FORCES</font>
-<br/>
-*** Insert information about friendly forces here.***
-"]];
-
-// ====================================================================================
