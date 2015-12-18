@@ -21,7 +21,9 @@ class Mission
 		"A3_Characters_F_INDEP",
 		"A3_Characters_F_EPC",
 		"dac_source",
-		"lop_faction_racs"
+		"lop_faction_racs",
+		"A3_Soft_F_Truck",
+		"R3F_Retex"
 	};
 	addOnsAuto[]=
 	{
@@ -31,7 +33,7 @@ class Mission
 		"A3_Characters_F_EPC",
 		"dac_source",
 		"A3_Structures_F_Mil_BagFence",
-		"lop_faction_ua",
+		"A3_Soft_F_Truck",
 		"A3_Structures_F_Mil_Fortification",
 		"A3_Structures_F_Mil_Cargo",
 		"A3_Structures_F_Civ_Garbage",
@@ -42,7 +44,7 @@ class Mission
 		"A3_Structures_F_Civ_Constructions",
 		"A3_Structures_F_EPB_Items_Vessels",
 		"ace_medical",
-		"lop_faction_racs",
+		"R3F_Retex",
 		"chernarus_winter"
 	};
 	randomSeed=56202;
@@ -813,7 +815,7 @@ class Mission
 			offsetY=-0.015777601;
 			id=51;
 			side="EMPTY";
-			vehicle="LOP_UA_Ural_fuel";
+			vehicle="B_G_Van_01_fuel_F";
 			skill=0.60000002;
 		};
 		class Item7
@@ -1349,7 +1351,7 @@ class Mission
 			azimut=120.553;
 			id=105;
 			side="EMPTY";
-			vehicle="LOP_RACS_UH60M";
+			vehicle="R3F_MERLIN";
 			leader=1;
 			skill=0.60000002;
 			fuel=0;
@@ -1358,7 +1360,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=4;
+		items=5;
 		class Item0
 		{
 			position[]={4050.2632,79.393288,3323.7241};
@@ -1386,6 +1388,13 @@ class Mission
 			name="fuel_3";
 			type="MCC_o_markerFuel";
 			colorName="ColorYellow";
+		};
+		class Item4
+		{
+			position[]={13362.051,64.565712,12017.452};
+			name="fuckups";
+			text="CIA Fallback Point";
+			type="Faction_US";
 		};
 	};
 	class Sensors
@@ -1457,7 +1466,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="cia1";
-			expCond="time > 1";
+			expCond="time > 180";
 			expActiv="fun =[""cia1"",[1,0,0],[2,2,6,3],[],[],[1,2,10,1,100,100],[0,0,0,0,1]] spawn DAC_Zone";
 			class Effects
 			{
@@ -1493,7 +1502,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="cia2";
-			expCond="time > 1";
+			expCond="time > 180";
 			expActiv="fun =[""cia2"",[1,0,0],[2,2,6,3],[],[],[1,2,10,1,100,100],[0,0,0,0,1]] spawn DAC_Zone";
 			class Effects
 			{
