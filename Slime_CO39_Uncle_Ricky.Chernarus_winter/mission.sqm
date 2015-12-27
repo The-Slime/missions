@@ -569,6 +569,7 @@ class Mission
 					id=34;
 					side="GUER";
 					vehicle="I_Soldier_AAR_F";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -1425,7 +1426,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			position[]={5213.4287,219.28711,4198.6689};
@@ -1489,14 +1490,11 @@ class Mission
 			rectangular=1;
 			activationBy="LOGIC";
 			repeating=1;
-			timeoutMin=180;
-			timeoutMid=180;
-			timeoutMax=180;
 			interruptable=1;
 			age="UNKNOWN";
 			name="cia1";
 			expCond="true";
-			expActiv="fun =[""cia1"",[1,0,0],[2,2,6,3],[],[],[1,2,10,1,100,100],[0,0,0,0,1]] spawn DAC_Zone";
+			expActiv="fun =[""cia1"",[1,0,0],[],[],[],[1,2,10,1,100,100],[0,0,0,0,1]] spawn DAC_Zone";
 			class Effects
 			{
 			};
@@ -1528,14 +1526,11 @@ class Mission
 			rectangular=1;
 			activationBy="LOGIC";
 			repeating=1;
-			timeoutMin=180;
-			timeoutMid=180;
-			timeoutMax=180;
 			interruptable=1;
 			age="UNKNOWN";
 			name="cia2";
 			expCond="true";
-			expActiv="fun =[""cia2"",[1,0,0],[2,2,6,3],[],[],[1,2,10,1,100,100],[0,0,0,0,1]] spawn DAC_Zone";
+			expActiv="fun =[""cia2"",[1,0,0],[],[],[],[1,2,10,1,100,100],[0,0,0,0,1]] spawn DAC_Zone";
 			class Effects
 			{
 			};
@@ -1550,6 +1545,24 @@ class Mission
 			age="UNKNOWN";
 			expCond="this && isServer";
 			expActiv="bomb1=""Bo_MK82"" createvehicle getPos boomtruck";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={13686.944,20.786331,11555.265};
+			a=40;
+			b=56;
+			angle=229.54257;
+			rectangular=1;
+			activationBy="LOGIC";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="ciabads";
+			expCond="true";
+			expActiv="fun =[""ciabads"",[1,0,0],[4,2,12,3],[],[],[],[0,0,0,0,1]] spawn DAC_Zone";
 			class Effects
 			{
 			};
