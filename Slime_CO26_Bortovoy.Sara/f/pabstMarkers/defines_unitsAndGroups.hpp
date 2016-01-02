@@ -161,6 +161,19 @@
     ["UnitOPFOR_TH7", "OPFOR TH7 -"], \
     ["UnitOPFOR_TH8", "OPFOR TH8 -"], \
     ["UnitOPFOR_AH1", "OPFOR AH1 -"], \
+	["UnitOPFOR_AFAC", "OPFOR Rukovodstvo -"], \
+	["UnitOPFOR_Akula1", "OPFOR Akula1 -"], \
+	["UnitOPFOR_Akula2", "OPFOR Akula2 -"], \
+	["UnitOPFOR_Krokodil1", "OPFOR Krokodil1 -"], \
+	["UnitOPFOR_Krokodil2", "OPFOR Krokodil2 -"], \
+	["UnitOPFOR_Som1", "OPFOR Som1 -"], \
+    ["UnitOPFOR_Som2", "OPFOR Som2 -"], \
+	["UnitOPFOR_Tsaplya1", "OPFOR Tsaplya1 -"], \
+	["UnitOPFOR_Tsaplya2", "OPFOR Tsaplya2 -"], \
+	["UnitOPFOR_Brodyaga1", "OPFOR Brodyaga1 -"], \
+	["UnitOPFOR_Brodyaga2", "OPFOR Brodyaga2 -"], \
+	["UnitOPFOR_Vyrozhdennyy1", "OPFOR Vyrozhdennyy1 -"], \
+	["UnitOPFOR_Vyrozhdennyy2", "OPFOR Vyrozhdennyy2 -"], \
     ["UnitOPFOR_FW1", "OPFOR FW1 -"] \
     ]
 

@@ -33,7 +33,7 @@ _input = _this select 0;
 _texture = _unknown;
 _color = [1,1,1,1];
 switch true do {
-    case (_input in ["COY","1PLT","2PLT","PLT","CO","DC"]): {
+    case (_input in ["COY","1PLT","2PLT","PLT","CO","DC","Rukovodstvo"]): {
     	_texture = _hq;
     	_color = _yellow;
     };
@@ -202,10 +202,10 @@ switch true do {
         _texture = _air;
         _color = _orange ;
     };
-    case (_input in ["AH1","AH2","AH3","FW1"]):
+    case (_input in ["AH1","AH2","AH3","FW1","Akula1","Akula2","Krokodil1","Krokodil2","Som1","Som2","Tsaplya1","Tsaplya2","Brodyaga1","Brodyaga2","Vyrozhdennyy1","Vyrozhdennyy2"]):
     {
         _texture = _air;
-        _color = _orange ;
+        _color = _red ;
     };
     case (_input in ["COM","DCM","P1M","P2M","PM","AM","BM","CM","DM","EM","FM"]):
     {

@@ -7,7 +7,10 @@ class Mission
 		"A3_Characters_F_EPC",
 		"a3_characters_f",
 		"dac_source",
-		"A3_Characters_F_OPFOR"
+		"A3_Characters_F_OPFOR",
+		"rhs_c_a2port_air",
+		"MELB",
+		"A3_Soft_F_EPC_Truck_03"
 	};
 	addOnsAuto[]=
 	{
@@ -15,6 +18,9 @@ class Mission
 		"a3_characters_f",
 		"dac_source",
 		"A3_Characters_F_OPFOR",
+		"rhs_c_a2port_air",
+		"MELB",
+		"A3_Soft_F_EPC_Truck_03",
 		"aia_hotfix_config"
 	};
 	randomSeed=15695876;
@@ -37,7 +43,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=25;
+		items=19;
 		class Item0
 		{
 			side="CIV";
@@ -160,7 +166,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={18151.213,8.6999998,18223.23};
+					position[]={18175.199,8.6999998,18130.42};
 					id=6;
 					side="EAST";
 					vehicle="O_helipilot_F";
@@ -172,10 +178,10 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={18153.084,8.6999998,18221.262};
+					position[]={18177.07,8.6999998,18128.451};
 					id=7;
 					side="EAST";
-					vehicle="O_helipilot_F";
+					vehicle="O_medic_F";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP";
@@ -185,110 +191,187 @@ class Mission
 		};
 		class Item7
 		{
-			side="CIV";
+			side="EAST";
 			class Vehicles
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
-					position[]={895.45319,0.020320248,2856.4194};
+					position[]={18161.844,8.6999998,18119.256};
 					id=8;
-					side="CIV";
-					vehicle="C_journalist_F";
+					side="EAST";
+					vehicle="O_helipilot_F";
 					leader=1;
+					rank="CAPTAIN";
 					skill=0.60000002;
-					init="this addAction [""Start Camera"",""[] call bis_fnc_camera;"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
-					description="Mission Observer";
+					text="UnitOPFOR_Akula1";
+					description="OPFOR Akula 1 Pilot";
+				};
+				class Item1
+				{
+					position[]={18163.715,8.6999998,18117.287};
+					id=9;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_AH1_CP_1";
+					description="OPFOR Akula 1 Gunner";
 				};
 			};
 		};
 		class Item8
 		{
-			side="CIV";
+			side="EAST";
 			class Vehicles
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
-					position[]={902.64471,0.060593262,2856.1772};
-					id=9;
-					side="CIV";
-					vehicle="C_journalist_F";
+					position[]={18169.904,8.6999998,18118.686};
+					id=10;
+					side="EAST";
+					vehicle="O_helipilot_F";
 					leader=1;
+					rank="CAPTAIN";
 					skill=0.60000002;
-					init="this addAction [""Start Camera"",""[] call bis_fnc_camera;"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
-					description="Mission Observer";
+					text="UnitOPFOR_Akula2";
+					description="OPFOR Akula 2 Pilot";
+				};
+				class Item1
+				{
+					position[]={18171.775,8.6999998,18116.717};
+					id=11;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_AH1_CP_2";
+					description="OPFOR Akula 2 Gunner";
 				};
 			};
 		};
 		class Item9
 		{
-			side="LOGIC";
+			side="EAST";
 			class Vehicles
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
-					position[]={453.08911,-0.002585873,3484.5588};
-					id=10;
-					side="LOGIC";
-					vehicle="HeadlessClient_F";
+					position[]={18180.328,8.6999998,18118.604};
+					id=12;
+					side="EAST";
+					vehicle="O_helipilot_F";
 					leader=1;
+					rank="CAPTAIN";
 					skill=0.60000002;
-					text="HC_1";
+					text="UnitOPFOR_Krokodil1";
+					description="OPFOR Krokodil 1 Pilot";
+				};
+				class Item1
+				{
+					position[]={18182.199,8.6999998,18116.635};
+					id=13;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_AH1_CP_3";
+					description="OPFOR Krokodil 1 Gunner";
 				};
 			};
 		};
 		class Item10
 		{
-			side="LOGIC";
+			side="EAST";
 			class Vehicles
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
-					position[]={580.11475,-0.082960419,3484.4753};
-					id=11;
-					side="LOGIC";
-					vehicle="DAC_Source_Extern";
+					position[]={18189.857,8.6999998,18118.441};
+					id=14;
+					side="EAST";
+					vehicle="O_helipilot_F";
 					leader=1;
+					rank="CAPTAIN";
 					skill=0.60000002;
+					text="UnitOPFOR_Krokodil2";
+					description="OPFOR Krokodil 2 Pilot";
+				};
+				class Item1
+				{
+					position[]={18191.729,8.6999998,18116.473};
+					id=15;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_AH1_CP_4";
+					description="OPFOR Krokodil 2 Gunner";
 				};
 			};
 		};
 		class Item11
 		{
-			side="LOGIC";
+			side="EAST";
 			class Vehicles
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
-					position[]={487.21753,-0.01066531,3484.6926};
-					id=12;
-					side="LOGIC";
-					vehicle="HeadlessClient_F";
+					position[]={18162.004,8.6999998,18110.049};
+					id=16;
+					side="EAST";
+					vehicle="O_helipilot_F";
 					leader=1;
+					rank="CAPTAIN";
 					skill=0.60000002;
-					text="HC2_1";
+					text="UnitOPFOR_Som1";
+					description="OPFOR Som 1 Pilot";
+				};
+				class Item1
+				{
+					position[]={18163.875,8.6999998,18108.08};
+					id=17;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_AH1_CP_5";
+					description="OPFOR Som 1 Gunner";
 				};
 			};
 		};
 		class Item12
 		{
-			side="LOGIC";
+			side="EAST";
 			class Vehicles
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
-					position[]={520.44751,-0.035724785,3484.0759};
-					id=13;
-					side="LOGIC";
-					vehicle="HeadlessClient_F";
+					position[]={18170.475,8.6999998,18109.805};
+					id=18;
+					side="EAST";
+					vehicle="O_helipilot_F";
 					leader=1;
+					rank="CAPTAIN";
 					skill=0.60000002;
-					text="HC3_1";
+					text="UnitOPFOR_Som2";
+					description="OPFOR Som 2 Pilot";
+				};
+				class Item1
+				{
+					position[]={18172.346,8.6999998,18107.836};
+					id=19;
+					side="EAST";
+					vehicle="O_helipilot_F";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitOPFOR_AH1_CP_6";
+					description="OPFOR Som 2 Gunner";
 				};
 			};
 		};
@@ -300,26 +383,26 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={18137.857,8.6999998,18212.066};
-					id=14;
+					position[]={18180.408,8.6999998,18109.805};
+					id=20;
 					side="EAST";
 					vehicle="O_helipilot_F";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitOPFOR_AFAC_1";
-					description="OPFOR AFAC/CSAR";
+					text="UnitOPFOR_Tsaplya1";
+					description="OPFOR Tsaplya 1 Pilot";
 				};
 				class Item1
 				{
-					position[]={18139.729,8.6999998,18210.098};
-					id=15;
+					position[]={18182.279,8.6999998,18107.836};
+					id=21;
 					side="EAST";
 					vehicle="O_helipilot_F";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitOPFOR_AH1_CP_1";
-					description="OPFOR AFAC/CSAR Asst";
+					text="UnitOPFOR_AH1_CP_7";
+					description="OPFOR Tsaplya 1 Gunner";
 				};
 			};
 		};
@@ -331,26 +414,26 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={18145.918,8.6999998,18211.496};
-					id=16;
+					position[]={18189.592,8.6999998,18108.582};
+					id=22;
 					side="EAST";
 					vehicle="O_helipilot_F";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitOPFOR_AFAC_2";
-					description="OPFOR AFAC/CSAR";
+					text="UnitOPFOR_Tsaplya2";
+					description="OPFOR Tsaplya 2 Pilot";
 				};
 				class Item1
 				{
-					position[]={18147.789,8.6999998,18209.527};
-					id=17;
+					position[]={18191.463,8.6999998,18106.613};
+					id=23;
 					side="EAST";
 					vehicle="O_helipilot_F";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitOPFOR_AH1_CP_2";
-					description="OPFOR AFAC/CSAR Asst";
+					text="UnitOPFOR_AH1_CP_8";
+					description="OPFOR Tsaplya 2 Gunner";
 				};
 			};
 		};
@@ -362,26 +445,26 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={18156.342,8.6999998,18211.414};
-					id=18;
+					position[]={18161.924,8.6999998,18101.738};
+					id=24;
 					side="EAST";
 					vehicle="O_helipilot_F";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitOPFOR_AFAC_3";
-					description="OPFOR AFAC/CSAR";
+					text="UnitOPFOR_Brodyaga1";
+					description="OPFOR Brodyaga 1 Pilot";
 				};
 				class Item1
 				{
-					position[]={18158.213,8.6999998,18209.445};
-					id=19;
+					position[]={18163.795,8.6999998,18099.77};
+					id=25;
 					side="EAST";
 					vehicle="O_helipilot_F";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitOPFOR_AH1_CP_3";
-					description="OPFOR AFAC/CSAR Asst";
+					text="UnitOPFOR_AH1_CP_9";
+					description="OPFOR Brodyaga 1 Gunner";
 				};
 			};
 		};
@@ -393,26 +476,26 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={18165.871,8.6999998,18211.252};
-					id=20;
+					position[]={18171.045,8.6999998,18101.33};
+					id=26;
 					side="EAST";
 					vehicle="O_helipilot_F";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitOPFOR_AFAC_4";
-					description="OPFOR AFAC/CSAR";
+					text="UnitOPFOR_Brodyaga2";
+					description="OPFOR Brodyaga 2 Pilot";
 				};
 				class Item1
 				{
-					position[]={18167.742,8.6999998,18209.283};
-					id=21;
+					position[]={18172.916,8.6999998,18099.361};
+					id=27;
 					side="EAST";
 					vehicle="O_helipilot_F";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitOPFOR_AH1_CP_4";
-					description="OPFOR AFAC/CSAR Asst";
+					text="UnitOPFOR_AH1_CP_10";
+					description="OPFOR Brodyaga 2 Gunner";
 				};
 			};
 		};
@@ -424,26 +507,26 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={18138.018,8.6999998,18202.859};
-					id=22;
+					position[]={18181.549,8.6999998,18101.656};
+					id=28;
 					side="EAST";
 					vehicle="O_helipilot_F";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitOPFOR_AFAC_5";
-					description="OPFOR AFAC/CSAR";
+					text="UnitOPFOR_Vyrozhdennyy1";
+					description="OPFOR Vyrozhdennyy 1 Pilot";
 				};
 				class Item1
 				{
-					position[]={18139.889,8.6999998,18200.891};
-					id=23;
+					position[]={18183.42,8.6999998,18099.688};
+					id=29;
 					side="EAST";
 					vehicle="O_helipilot_F";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitOPFOR_AH1_CP_5";
-					description="OPFOR AFAC/CSAR Asst";
+					text="UnitOPFOR_AH1_CP_11";
+					description="OPFOR Vyrozhdennyy 1 Gunner";
 				};
 			};
 		};
@@ -455,219 +538,185 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={18146.488,8.6999998,18202.615};
-					id=24;
-					side="EAST";
-					vehicle="O_helipilot_F";
-					leader=1;
-					rank="CAPTAIN";
-					skill=0.60000002;
-					text="UnitOPFOR_AFAC_6";
-					description="OPFOR AFAC/CSAR";
-				};
-				class Item1
-				{
-					position[]={18148.359,8.6999998,18200.646};
-					id=25;
-					side="EAST";
-					vehicle="O_helipilot_F";
-					rank="LIEUTENANT";
-					skill=0.60000002;
-					text="UnitOPFOR_AH1_CP_6";
-					description="OPFOR AFAC/CSAR Asst";
-				};
-			};
-		};
-		class Item19
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=2;
-				class Item0
-				{
-					position[]={18156.422,8.6999998,18202.615};
-					id=26;
-					side="EAST";
-					vehicle="O_helipilot_F";
-					leader=1;
-					rank="CAPTAIN";
-					skill=0.60000002;
-					text="UnitOPFOR_AFAC_7";
-					description="OPFOR AFAC/CSAR";
-				};
-				class Item1
-				{
-					position[]={18158.293,8.6999998,18200.646};
-					id=27;
-					side="EAST";
-					vehicle="O_helipilot_F";
-					rank="LIEUTENANT";
-					skill=0.60000002;
-					text="UnitOPFOR_AH1_CP_7";
-					description="OPFOR AFAC/CSAR Asst";
-				};
-			};
-		};
-		class Item20
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=2;
-				class Item0
-				{
-					position[]={18168.801,8.6999998,18202.533};
-					id=28;
-					side="EAST";
-					vehicle="O_helipilot_F";
-					leader=1;
-					rank="CAPTAIN";
-					skill=0.60000002;
-					text="UnitOPFOR_AFAC_8";
-					description="OPFOR AFAC/CSAR";
-				};
-				class Item1
-				{
-					position[]={18170.672,8.6999998,18200.564};
-					id=29;
-					side="EAST";
-					vehicle="O_helipilot_F";
-					rank="LIEUTENANT";
-					skill=0.60000002;
-					text="UnitOPFOR_AH1_CP_8";
-					description="OPFOR AFAC/CSAR Asst";
-				};
-			};
-		};
-		class Item21
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=2;
-				class Item0
-				{
-					position[]={18137.938,8.6999998,18194.549};
+					position[]={18190.406,8.6999998,18100.107};
 					id=30;
 					side="EAST";
 					vehicle="O_helipilot_F";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitOPFOR_AFAC_9";
-					description="OPFOR AFAC/CSAR";
+					text="UnitOPFOR_Vyrozhdennyy2";
+					description="OPFOR OPFOR Vyrozhdennyy 2 Pilot";
 				};
 				class Item1
 				{
-					position[]={18139.809,8.6999998,18192.58};
+					position[]={18192.277,8.6999998,18098.139};
 					id=31;
 					side="EAST";
 					vehicle="O_helipilot_F";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitOPFOR_AH1_CP_9";
-					description="OPFOR AFAC/CSAR Asst";
-				};
-			};
-		};
-		class Item22
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=2;
-				class Item0
-				{
-					position[]={18147.059,8.6999998,18194.141};
-					id=32;
-					side="EAST";
-					vehicle="O_helipilot_F";
-					leader=1;
-					rank="CAPTAIN";
-					skill=0.60000002;
-					text="UnitOPFOR_AFAC_10";
-					description="OPFOR AFAC/CSAR";
-				};
-				class Item1
-				{
-					position[]={18148.93,8.6999998,18192.172};
-					id=33;
-					side="EAST";
-					vehicle="O_helipilot_F";
-					rank="LIEUTENANT";
-					skill=0.60000002;
-					text="UnitOPFOR_AH1_CP_10";
-					description="OPFOR AFAC/CSAR Asst";
-				};
-			};
-		};
-		class Item23
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=2;
-				class Item0
-				{
-					position[]={18157.563,8.6999998,18194.467};
-					id=34;
-					side="EAST";
-					vehicle="O_helipilot_F";
-					leader=1;
-					rank="CAPTAIN";
-					skill=0.60000002;
-					text="UnitOPFOR_AFAC_11";
-					description="OPFOR AFAC/CSAR";
-				};
-				class Item1
-				{
-					position[]={18159.434,8.6999998,18192.498};
-					id=35;
-					side="EAST";
-					vehicle="O_helipilot_F";
-					rank="LIEUTENANT";
-					skill=0.60000002;
-					text="UnitOPFOR_AH1_CP_11";
-					description="OPFOR AFAC/CSAR Asst";
-				};
-			};
-		};
-		class Item24
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=2;
-				class Item0
-				{
-					position[]={18169.615,8.6999998,18194.059};
-					id=36;
-					side="EAST";
-					vehicle="O_helipilot_F";
-					leader=1;
-					rank="CAPTAIN";
-					skill=0.60000002;
-					text="UnitOPFOR_AFAC_12";
-					description="OPFOR AFAC/CSAR";
-				};
-				class Item1
-				{
-					position[]={18171.486,8.6999998,18192.09};
-					id=37;
-					side="EAST";
-					vehicle="O_helipilot_F";
-					rank="LIEUTENANT";
-					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP_12";
-					description="OPFOR AFAC/CSAR Asst";
+					description="OPFOR OPFOR Vyrozhdennyy 2 Gunner";
 				};
 			};
 		};
 	};
+	class Vehicles
+	{
+		items=17;
+		class Item0
+		{
+			position[]={18099.734,8.6999998,18135.041};
+			azimut=60;
+			id=32;
+			side="EMPTY";
+			vehicle="RHS_Ka52_vvs";
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={18074.119,8.6999998,18120.533};
+			azimut=60;
+			id=33;
+			side="EMPTY";
+			vehicle="RHS_Ka52_vvs";
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={18105.01,8.6999998,18114.57};
+			azimut=60;
+			id=34;
+			side="EMPTY";
+			vehicle="RHS_Ka52_vvs";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={18078.377,8.6999998,18097.447};
+			azimut=60;
+			id=35;
+			side="EMPTY";
+			vehicle="RHS_Ka52_vvs";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={18109.383,8.6999998,18091.781};
+			azimut=60;
+			id=36;
+			side="EMPTY";
+			vehicle="RHS_Ka52_vvs";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={18083.006,8.6999998,18075.818};
+			azimut=60;
+			id=37;
+			side="EMPTY";
+			vehicle="RHS_Ka52_vvs";
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={18115.816,8.6999998,18068.094};
+			azimut=60;
+			id=38;
+			side="EMPTY";
+			vehicle="RHS_Ka52_vvs";
+			skill=0.60000002;
+		};
+		class Item7
+		{
+			position[]={18092.656,8.6999998,18053.547};
+			azimut=60;
+			id=39;
+			side="EMPTY";
+			vehicle="RHS_Ka52_vvs";
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={18132.91,8.6999998,18147.473};
+			azimut=60;
+			id=40;
+			side="EMPTY";
+			vehicle="RHS_Ka52_vvs";
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={18138.314,8.6999998,18123.398};
+			azimut=60;
+			id=41;
+			side="EMPTY";
+			vehicle="RHS_Ka52_vvs";
+			skill=0.60000002;
+		};
+		class Item10
+		{
+			position[]={18143.461,8.6999998,18097.521};
+			azimut=60;
+			id=42;
+			side="EMPTY";
+			vehicle="RHS_Ka52_vvs";
+			skill=0.60000002;
+		};
+		class Item11
+		{
+			position[]={18147.918,8.6999998,18077.174};
+			azimut=60;
+			id=43;
+			side="EMPTY";
+			vehicle="RHS_Ka52_vvs";
+			skill=0.60000002;
+		};
+		class Item12
+		{
+			position[]={18212.15,8.6999998,18141.23};
+			id=44;
+			side="EMPTY";
+			vehicle="MELB_MH6M";
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={18240.584,8.6999998,18140.361};
+			id=45;
+			side="EMPTY";
+			vehicle="MELB_MH6M";
+			skill=0.60000002;
+		};
+		class Item14
+		{
+			position[]={18237.357,8.6999998,18106.975};
+			id=46;
+			side="EMPTY";
+			vehicle="O_Truck_03_fuel_F";
+			skill=0.60000002;
+		};
+		class Item15
+		{
+			position[]={18237.357,8.6999998,18088.91};
+			id=47;
+			side="EMPTY";
+			vehicle="O_Truck_03_ammo_F";
+			skill=0.60000002;
+		};
+		class Item16
+		{
+			position[]={18237.125,8.6999998,18068.738};
+			id=48;
+			side="EMPTY";
+			vehicle="O_Truck_03_repair_F";
+			skill=0.60000002;
+		};
+	};
 	class Markers
 	{
-		items=4;
+		items=2;
 		class Item0
 		{
 			position[]={502.27344,-0.021884603,3231.4717};
@@ -678,35 +727,19 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={499.95096,0.097644061,3704.4907};
-			name="Example Dac Triggers";
-			text="Example Dac Zones";
-			type="mil_arrow";
-			colorName="ColorRed";
-		};
-		class Item2
-		{
 			position[]={502.27344,-0.021884603,3231.4717};
 			name="required_modules_1";
 			text="REQUIRED";
 			type="mil_arrow";
 			colorName="ColorRed";
 		};
-		class Item3
-		{
-			position[]={499.95096,0.097644061,3704.4907};
-			name="Example Dac Triggers_1";
-			text="Example Dac Zones";
-			type="mil_arrow";
-			colorName="ColorRed";
-		};
 	};
 	class Sensors
 	{
-		items=4;
+		items=1;
 		class Item0
 		{
-			position[]={2563.0994,13.905,2737.8799};
+			position[]={2541.9446,13.905,2734.8804};
 			a=300;
 			b=300;
 			activationBy="LOGIC";
@@ -717,57 +750,6 @@ class Mission
 			name="z1";
 			expCond="true";
 			expActiv="fun =[""z1"",[1,0,0],[3,3,20,6],[],[],[],[0,0,0,0,1]] spawn DAC_Zone";
-			class Effects
-			{
-			};
-		};
-		class Item1
-		{
-			position[]={454.1713,-0.11567695,3783.1035};
-			a=300;
-			b=300;
-			activationBy="LOGIC";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			text="This Generates 3 small squads of OPRFOR CSAT. They are in DAC ID Group 1";
-			name="z1_1";
-			expCond="true";
-			expActiv="fun =[""z1"",[1,0,0],[3,3,20,6],[],[],[],[0,0,0,0,1]] spawn DAC_Zone";
-			class Effects
-			{
-			};
-		};
-		class Item2
-		{
-			position[]={550.47607,-0.025499206,3784.3696};
-			a=300;
-			b=300;
-			activationBy="LOGIC";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			text="This generates 5 groups of wheeled vehicles with fireteams in them. They are in DAC ID Group 2. WEST NATO";
-			name="z2";
-			expCond="true";
-			expActiv="fun =[""z2"",[2,0,0],[],[5,2,50,8],[],[],[1,1,1,1,1]] spawn DAC_Zone";
-			class Effects
-			{
-			};
-		};
-		class Item3
-		{
-			position[]={642.79553,0.0032462068,3783.7891};
-			a=300;
-			b=300;
-			activationBy="LOGIC";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			text="This generates 3 helicopters with fireteams for INDIFOR. They are apart of DAC ID group 3";
-			name="z3";
-			expCond="true";
-			expActiv="fun =[""z3"",[3,0,0],[],[],[],[3,3,6],[2,2,1,1,1]] spawn DAC_Zone";
 			class Effects
 			{
 			};
