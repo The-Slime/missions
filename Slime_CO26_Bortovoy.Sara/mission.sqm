@@ -170,6 +170,7 @@ class Mission
 					id=6;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -182,6 +183,7 @@ class Mission
 					id=7;
 					side="EAST";
 					vehicle="O_medic_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP";
@@ -201,6 +203,7 @@ class Mission
 					id=8;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -213,6 +216,7 @@ class Mission
 					id=9;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP_1";
@@ -232,6 +236,7 @@ class Mission
 					id=10;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -244,6 +249,7 @@ class Mission
 					id=11;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP_2";
@@ -263,6 +269,7 @@ class Mission
 					id=12;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -275,6 +282,7 @@ class Mission
 					id=13;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP_3";
@@ -294,6 +302,7 @@ class Mission
 					id=14;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -306,6 +315,7 @@ class Mission
 					id=15;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP_4";
@@ -325,6 +335,7 @@ class Mission
 					id=16;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -337,6 +348,7 @@ class Mission
 					id=17;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP_5";
@@ -356,6 +368,7 @@ class Mission
 					id=18;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -368,6 +381,7 @@ class Mission
 					id=19;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP_6";
@@ -387,6 +401,7 @@ class Mission
 					id=20;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -399,6 +414,7 @@ class Mission
 					id=21;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP_7";
@@ -418,6 +434,7 @@ class Mission
 					id=22;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -430,6 +447,7 @@ class Mission
 					id=23;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP_8";
@@ -449,6 +467,7 @@ class Mission
 					id=24;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -461,6 +480,7 @@ class Mission
 					id=25;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP_9";
@@ -480,6 +500,7 @@ class Mission
 					id=26;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -492,6 +513,7 @@ class Mission
 					id=27;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP_10";
@@ -511,6 +533,7 @@ class Mission
 					id=28;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -523,6 +546,7 @@ class Mission
 					id=29;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP_11";
@@ -542,6 +566,7 @@ class Mission
 					id=30;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -554,6 +579,7 @@ class Mission
 					id=31;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP_12";

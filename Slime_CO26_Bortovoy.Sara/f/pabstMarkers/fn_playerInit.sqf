@@ -1,7 +1,7 @@
 //Marker Settings:
 
 //How often the map markers are updated:
-F_Markers_delay = 3;
+F_Markers_delay = 1;
 
 //Set to false to only show markers with players in them
 F_Markers_drawNonPlayerGroups = true;

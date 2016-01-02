@@ -52,8 +52,8 @@ class opf_f {
     #define EAST_SPOTTER_MAG "30Rnd_65x39_caseless_green:8"
 
 	// SMG
-    #define EAST_SMG "SMG_02_F"
-    #define EAST_SMG_MAG "30Rnd_9x21_Mag:5"
+    #define EAST_SMG "rhs_weap_ak74m_plummag_folded"
+    #define EAST_SMG_MAG "rhs_30Rnd_545x39_AK:5"
 
 	// Pistol
     #define EAST_PISTOL "hgun_Rook40_F"
@@ -262,10 +262,10 @@ class opf_f {
 // Vehicle Infantry
 
     class O_Helipilot_F {// Pilot
-        uniform[] = {"U_O_PilotCoveralls"};  /// randomized
-        vest[] = {"V_TacVest_blk"}; /// randomized
-        headgear[] = {"H_PilotHelmetHeli_O"}; /// randomized
-        backpack[] = {"B_AssaultPack_rgr"};
+        uniform[] = {"rhs_uniform_flora_patchless"};  /// randomized
+        vest[] = {"rhs_vydra_3m"}; /// randomized
+        headgear[] = {"rhs_zsh7a_mike"}; /// randomized
+        backpack[] = {};
         weapons[] = {EAST_SMG}; /// randomized
         magazines[] = {EAST_SMG_MAG,EAST_SMOKE_WHITE};
         items[] = {"MEDICAL_STANDARD","ACRE_PRC148"};
