@@ -130,11 +130,9 @@ class opf_f {
         linkedItems[] += {"O_uavterminal"};
     };
 
-	class O_medic_F: O_Soldier_F {// Medic
-        //vest[] = {"rhsusf_iotv_ocp_medic"}; /// randomized
-        weapons[] = {EAST_CARBINE};
-        magazines[] = {EAST_CARBINE_MAG,EAST_SMOKE_WHITE};
-        backpackItems[] = {"MEDICAL_MEDIC"};
+	class O_medic_F: O_Helipilot_F {// Medic
+		backpack[] = {"rhs_assault_umbts"}; /// randomized
+		backpackItems[] = {"MEDICAL_MEDIC"};
     };
 
 // ====================================================================================

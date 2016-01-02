@@ -74,7 +74,7 @@ AFAC will double as CSAR for crews of downed helicopters.
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-Make use of our large amount of airborne support assets to complete various objectives across Sahrani, handed down by HIGHCOM and distributed by your AFAC.
+Make use of our large amount of airborne support assets to complete various objectives across Sahrani, handed down by HIGHCOM and distributed by your AFAC. In particular we are interested in reducing the enemy's available manpower.
 "]];
 
 // ====================================================================================
@@ -88,7 +88,7 @@ Our forces across Sahrani have stalled in many locations. We have been redeploye
 <br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-The enemies are known to have heavy machineguns. We cannot confirm any other kind of air defences at this time. There are also some armor units.
+Our ground forces have found large numbers of western-built MANPAD launchers among defeated enemies. We cannot confirm any other kind of air defences at this time.
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
