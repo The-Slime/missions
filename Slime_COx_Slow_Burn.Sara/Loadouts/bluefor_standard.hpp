@@ -8,32 +8,32 @@ class blu_f {
 
 
 	//Rifle
-    #define WEST_RIFLE "arifle_MX_F"
-    #define WEST_RIFLE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
+    #define WEST_RIFLE "hlc_rifle_g3ka4"
+    #define WEST_RIFLE_MAG "hlc_20rnd_762x51_b_G3:12","hlc_20rnd_762x51_T_G3:3"
 
 	//GL Rifle
-    #define WEST_GLRIFLE "arifle_MX_GL_F"
-    #define WEST_GLRIFLE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
+    #define WEST_GLRIFLE "HLC_Rifle_g3ka4_GL"
+    #define WEST_GLRIFLE_MAG "hlc_20rnd_762x51_b_G3:12","hlc_20rnd_762x51_T_G3:3"
     #define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
     #define WEST_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
     #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareWhite_F:2"
 
 	//Carbine
-    #define WEST_CARBINE "arifle_MXC_F"
-    #define WEST_CARBINE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
+    #define WEST_CARBINE "hlc_rifle_g3ka4"
+    #define WEST_CARBINE_MAG "hlc_20rnd_762x51_b_G3:12","hlc_20rnd_762x51_T_G3:3"
 
 	//Diver
 	#define SDAR "arifle_SDAR_F"
 	#define SDAR_MAG "20Rnd_556x45_UW_mag:6"
 
     // AR
-    #define WEST_AR "arifle_MX_SW_F"
-    #define WEST_AR_MAG "100Rnd_65x39_caseless_mag:2"
-    #define WEST_AR_MAG2 "100Rnd_65x39_caseless_mag_Tracer:2"
+    #define WEST_AR "R3F_Minimi_762"
+    #define WEST_AR_MAG "R3F_100Rnd_762x51_MINIMI:4"
+    #define WEST_AR_MAG2 "R3F_100Rnd_762x51_MINIMI:4"
 
 	// AT
-    #define WEST_AT "launch_NLAW_F"
-    #define WEST_AT_MAG "NLAW_F"
+    #define WEST_AT "BWA3_Pzf3"
+    #define WEST_AT_MAG "BWA3_Pzf3_IT"
 
 	// MMG
     #define WEST_MMG "MMG_02_black_F"
@@ -56,12 +56,12 @@ class blu_f {
     #define WEST_SPOTTER_MAG "30Rnd_65x39_caseless_mag:8"
 
 	// SMG
-    #define WEST_SMG "arifle_MXC_F"
-    #define WEST_SMG_MAG "30Rnd_65x39_caseless_mag:6"
+    #define WEST_SMG "hgun_PDW2000_F"
+    #define WEST_SMG_MAG "30Rnd_9x21_Mag:6"
 
    // Pistol
-    #define WEST_PISTOL "hgun_ACPC2_F"
-    #define WEST_PISTOL_MAG "9Rnd_45ACP_Mag:4"
+    #define WEST_PISTOL "rhsusf_weap_glock17g4"
+    #define WEST_PISTOL_MAG "rhsusf_mag_17Rnd_9x19_JHP:3"
 
 	// Grenades, Smoke and Frag
 	#define WEST_GRENADE "HandGrenade:2"
@@ -101,10 +101,10 @@ class blu_f {
 // Leadership INF and Groupies
 
     class B_Soldier_F {// rifleman
-        uniform[] = {"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};  /// randomized
-        vest[] = {"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"}; /// randomized
-        headgear[] = {"H_HelmetB","H_HelmetSpecB"}; /// randomized
-        backpack[] = {"B_AssaultPack_mcamo"}; /// randomized
+        uniform[] = {"MNP_CombatUniform_AMCU_T","MNP_CombatUniform_AMCU_ST"};  /// randomized
+        vest[] = {"MNP_Vest_AMCU_2","MNP_Vest_AMCU"}; /// randomized
+        headgear[] = {"MNP_Helmet_AMCU"}; /// randomized
+        backpack[] = {"B_AssaultPack_rgr"}; /// randomized
         backpackItems[] = {"MEDICAL_STANDARD","ACE_IR_Strobe_item"};
         weapons[] = {WEST_RIFLE}; /// randomized
         launchers[] = {}; /// randomized
@@ -112,16 +112,14 @@ class blu_f {
         magazines[] = {WEST_RIFLE_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
         items[] = {"ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles"};
-        attachments[] = {"optic_Holosight","acc_pointer_IR"};
+        attachments[] = {"BWA3_optic_EOTech_Mag_Off"};
     };
 
     class B_officer_F: B_Soldier_F {// CO and DC
         weapons[] = {WEST_GLRIFLE};
-        vest[] = {"V_PlateCarrierGL_rgr"}; /// randomized
-        headgear[] = {"H_HelmetSpecB_blk"}; /// randomized
         magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_PISTOL_MAG,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_SMOKE_GREEN};
         handguns[] = {WEST_PISTOL}; /// randomized
-        backpackItems[] += {"ACE_key_west", "ACRE_PRC117F"};
+        backpackItems[] += {"ACE_key_west","ACRE_PRC117F"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","ACE_Vector"};
         items[] = {"ACE_MapTools","ACRE_PRC148"};
     };
@@ -133,12 +131,11 @@ class blu_f {
     };
 
     class B_soldier_UAV_F: B_Soldier_F {
-        backpack[] = {"B_Kitbag_mcamo"}; /// randomized
+        backpack[] = {"B_UAV_01_backpack_F"}; /// randomized
         linkedItems[] += {"B_uavterminal"};
     };
 
 	class B_medic_F: B_Soldier_F {// Medic
-        vest[] = {"V_PlateCarrierSpec_rgr"}; /// randomized
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,WEST_SMOKE_WHITE};
         backpackItems[] = {"MEDICAL_MEDIC"};
@@ -149,22 +146,20 @@ class blu_f {
 
     class B_Soldier_TL_F: B_Soldier_F {// FTL
         weapons[] = {WEST_GLRIFLE};
-        headgear[] = {"H_HelmetSpecB"}; /// randomized
         magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_SMOKE_WHITE,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_GRENADE,WEST_SMOKE_WHITE};
         backpackItems[] += {"ACE_key_west"};
         linkedItems[] += {"ItemGPS","Binocular"};
     };
 
     class B_Soldier_AR_F: B_Soldier_F {// AR
-        vest[] = {"V_PlateCarrier2_rgr"}; /// randomized
         weapons[] = {WEST_AR};
         magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
         handguns[] = {WEST_PISTOL}; /// randomized
+		attachments[] = {"optic_MRCO"};
     };
 
     class B_Soldier_AAR_F: B_Soldier_F {// AAR
         backpackItems[] += {WEST_AR_MAG2};
-        attachments[] = {"optic_Arco"};
         linkedItems[] += {"Binocular"};
     };
 
@@ -279,22 +274,19 @@ class blu_f {
         headgear[] = {"H_PilotHelmetFighter_B"}; /// randomized
     };
 
-    class B_crew_F {// Crew
-        uniform[] = {"U_B_CombatUniform_mcam"};  // randomized
-        vest[] = {"V_TacVest_blk"}; // randomized
-        headgear[] = {"H_Watchcap_camo"}; /// randomized
-        backpack[] = {"B_Carryall_mcamo"};
-        weapons[] = {WEST_CARBINE}; /// randomized
-        magazines[] = {WEST_CARBINE_MAG,WEST_SMOKE_WHITE};
+    class B_crew_F: B_Soldier_F {// Crew
+        vest[] = {"V_BandollierB_khk"}; // randomized
+        headgear[] = {}; /// randomized
+        backpack[] = {"B_Carryall_khk"};
+        weapons[] = {WEST_SMG}; /// randomized
+        magazines[] = {WEST_SMG_MAG_MAG,WEST_SMOKE_WHITE};
         items[] = {"MEDICAL_STANDARD"};
-        backpackItems[] += {"ACE_key_west","ACRE_PRC148","ACRE_PRC117F"};
+        backpackItems[] += {"ACE_key_west","ACRE_PRC343","ACRE_PRC117F"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemGPS"};
     };
 
     class B_soldier_repair_F: B_crew_F {// Repair Specialist
-        backpack[] = {"B_Carryall_mcamo"};
-        backpackItems[] = {"Toolkit"};
-        vest[] = {"V_PlateCarrier1_rgr"}; /// randomized
+        backpackItems[] = {"Toolkit","ACRE_PRC148"};
         items[] += {"ACRE_PRC343"};
         linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
     };
