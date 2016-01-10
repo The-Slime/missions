@@ -11,7 +11,11 @@ class Mission
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
 		"A3_Characters_F_EPC",
-		"dac_source"
+		"dac_source",
+		"rhsusf_c_hmmwv",
+		"rhsusf_vehicles",
+		"rhsusf_c_fmtv",
+		"RHS_US_A2Port_Armor"
 	};
 	addOnsAuto[]=
 	{
@@ -23,6 +27,10 @@ class Mission
 		"A3_Structures_F_Mil_BagBunker",
 		"A3_Structures_F_Walls",
 		"A3_Signs_F",
+		"rhsusf_c_hmmwv",
+		"rhsusf_vehicles",
+		"rhsusf_c_fmtv",
+		"RHS_US_A2Port_Armor",
 		"aia_hotfix_config"
 	};
 	randomSeed=57498;
@@ -1144,7 +1152,7 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={13363.957,26.790625,11080.716};
+					position[]={13363.957,26.880817,11084.741};
 					id=70;
 					side="WEST";
 					vehicle="B_crew_F";
@@ -1157,7 +1165,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={13365.938,26.713821,11078.22};
+					position[]={13365.938,26.802132,11082.245};
 					id=71;
 					side="WEST";
 					vehicle="B_crew_F";
@@ -1169,7 +1177,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={13368.67,26.677439,11077.985};
+					position[]={13368.67,26.760639,11082.011};
 					id=72;
 					side="WEST";
 					vehicle="B_soldier_repair_F";
@@ -1183,7 +1191,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=24;
+		items=32;
 		class Item0
 		{
 			position[]={8756.4297,0.00029754601,15144.8};
@@ -1412,6 +1420,76 @@ class Mission
 			id=96;
 			side="EMPTY";
 			vehicle="LOP_SLA_UAZ_Open";
+			skill=0.60000002;
+		};
+		class Item24
+		{
+			position[]={13325.722,27.282173,11048.127};
+			azimut=-122.97679;
+			id=97;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_m2";
+			skill=0.60000002;
+		};
+		class Item25
+		{
+			position[]={13322.339,27.368505,11052.577};
+			azimut=-122.97679;
+			id=98;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_m2";
+			skill=0.60000002;
+		};
+		class Item26
+		{
+			position[]={13318.896,27.417292,11057.151};
+			azimut=-122.97679;
+			id=99;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_m2";
+			skill=0.60000002;
+		};
+		class Item27
+		{
+			position[]={13315.044,27.375715,11063.67};
+			azimut=-124.05361;
+			id=100;
+			side="EMPTY";
+			vehicle="rhsusf_M1083A1P2_wd_open_fmtv_usarmy";
+			skill=0.60000002;
+		};
+		class Item28
+		{
+			position[]={13310.097,27.326094,11070.814};
+			azimut=-124.05361;
+			id=101;
+			side="EMPTY";
+			vehicle="rhsusf_M1083A1P2_wd_open_fmtv_usarmy";
+			skill=0.60000002;
+		};
+		class Item29
+		{
+			position[]={13305.023,27.317234,11078.021};
+			azimut=-124.05361;
+			id=102;
+			side="EMPTY";
+			vehicle="rhsusf_M1083A1P2_wd_open_fmtv_usarmy";
+			skill=0.60000002;
+		};
+		class Item30
+		{
+			position[]={13353.447,26.792538,11070.942};
+			id=103;
+			side="EMPTY";
+			vehicle="RHS_M2A2_wd";
+			skill=0.60000002;
+		};
+		class Item31
+		{
+			position[]={13366.299,26.56237,11071.085};
+			id=104;
+			side="EMPTY";
+			vehicle="RHS_M2A2_wd";
 			skill=0.60000002;
 		};
 	};

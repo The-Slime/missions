@@ -7,7 +7,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Slimayo
 <br/><br/>
 Made with Wavelength.
 "]];
@@ -19,7 +19,9 @@ Made with Wavelength.
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+Bet I'm forgetting something
+
+(as I wrote that I remembered that I forgot to find vehicles for the inf lol)
 "]];
 
 // ====================================================================================
@@ -67,19 +69,11 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 <font size='18'>COMMANDER'S INTENT</font>
 <br/>
-*** Insert very short summary of plan here. ***
+Push along the coastal highway
 <br/><br/>
 <font size='18'>MOVEMENT PLAN</font>
 <br/>
-*** Insert movement instructions here. ***
-<br/><br/>
-<font size='18'>FIRE SUPPORT PLAN</font>
-<br/>
-*** Insert fire support instructions here. ***
-<br/><br/>
-<font size='18'>SPECIAL TASKS</font>
-<br/>
-*** Insert instructions for specific units here. ***
+Will be up to the commander. Vehicles are provided for a convoy.
 "]];
 
 // ====================================================================================
@@ -89,7 +83,7 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-*** Insert the mission here. ***
+Push along the coastal highway and secure the marked towns so that the SLA is denied access to an escape route.
 "]];
 
 // ====================================================================================
@@ -99,15 +93,15 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
+With Bagango under our control, the SLA is effectively pinned into the western half of the island. They will probably be looking to make a getaway via the coastline; naturally we want to prevent this so that we can destroy them or force their surrender. To this end we have sent another unit to the nohtern coast while you have been deployed to the southern coast. If we control these coastlines, they will not be able to escape.
 <br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-*** Insert information about enemy forces here.***
+SLA, about a platoon, with light armor support. They operate a variety of older Soviet vehicles so we cannot give you a good idea of what it is.
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
-*** Insert information about friendly forces here.***
+Sahrani Governmental Forces
 "]];
 
 // ====================================================================================

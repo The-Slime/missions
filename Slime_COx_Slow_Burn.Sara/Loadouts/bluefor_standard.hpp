@@ -117,9 +117,9 @@ class blu_f {
 
     class B_officer_F: B_Soldier_F {// CO and DC
         weapons[] = {WEST_GLRIFLE};
-        magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_PISTOL_MAG,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_SMOKE_GREEN};
+        magazines[] = {WEST_GLRIFLE_MAG,WEST_PISTOL_MAG,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_SMOKE_GREEN};
         handguns[] = {WEST_PISTOL}; /// randomized
-        backpackItems[] += {"ACE_key_west","ACRE_PRC117F"};
+        backpackItems[] += {WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,"ACE_key_west","ACRE_PRC117F"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","ACE_Vector"};
         items[] = {"ACE_MapTools","ACRE_PRC148"};
     };
@@ -127,7 +127,7 @@ class blu_f {
     class B_Soldier_SL_F: B_Officer_F {// SL
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","Binocular"};
         items[] = {"ACE_MapTools","ACRE_PRC148", "ACRE_PRC343"};
-        backpackItems[] = {"MEDICAL_LEADER","ACE_IR_Strobe_item"};
+        backpackItems[] += {"MEDICAL_LEADER","ACE_IR_Strobe_item"};
     };
 
     class B_soldier_UAV_F: B_Soldier_F {
@@ -146,8 +146,8 @@ class blu_f {
 
     class B_Soldier_TL_F: B_Soldier_F {// FTL
         weapons[] = {WEST_GLRIFLE};
-        magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_SMOKE_WHITE,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_GRENADE,WEST_SMOKE_WHITE};
-        backpackItems[] += {"ACE_key_west"};
+        magazines[] = {WEST_GLRIFLE_MAG,WEST_SMOKE_WHITE,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_GRENADE,WEST_SMOKE_WHITE};
+        backpackItems[] += {WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,"ACE_key_west"};
         linkedItems[] += {"ItemGPS","Binocular"};
     };
 
