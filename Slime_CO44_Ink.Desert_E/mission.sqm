@@ -20,17 +20,18 @@ class Mission
 	randomSeed=279996;
 	class Intel
 	{
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
-		year=2012;
+		overviewText="M1A1 (Aggressor, Breaker) // M2A2 (Courier, Schlepper)";
+		startWeather=0.29999998;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.29999998;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		year=2018;
 		month=6;
-		day=24;
+		day=17;
+		hour=6;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
@@ -49,7 +50,7 @@ class Mission
 					id=0;
 					side="WEST";
 					vehicle="B_officer_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -420,7 +421,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV1_C";
-					description="BLUFOR IFV 1 Commander";
+					description="BLUFOR Courier 1 Commander";
 				};
 				class Item1
 				{
@@ -432,7 +433,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV1_G";
-					description="BLUFOR IFV 1 Gunner";
+					description="BLUFOR Courier 1 Gunner";
 				};
 				class Item2
 				{
@@ -443,7 +444,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV1_D";
-					description="BLUFOR IFV 1 Driver";
+					description="BLUFOR Courier 1 Driver";
 				};
 			};
 		};
@@ -464,7 +465,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV2_C";
-					description="BLUFOR IFV 2 Commander";
+					description="BLUFOR Courier 2 Commander";
 				};
 				class Item1
 				{
@@ -476,7 +477,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV2_G";
-					description="BLUFOR IFV 2 Gunner";
+					description="BLUFOR Courier 2 Gunner";
 				};
 				class Item2
 				{
@@ -487,7 +488,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV2_D";
-					description="BLUFOR IFV 2 Driver";
+					description="BLUFOR Courier 2 Driver";
 				};
 			};
 		};
@@ -508,7 +509,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV3_C";
-					description="BLUFOR IFV 3 Commander";
+					description="BLUFOR Schlepper 1 Commander";
 				};
 				class Item1
 				{
@@ -520,7 +521,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV3_G";
-					description="BLUFOR IFV 3 Gunner";
+					description="BLUFOR Schlepper 1 Gunner";
 				};
 				class Item2
 				{
@@ -531,7 +532,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV3_D";
-					description="BLUFOR IFV 3 Driver";
+					description="BLUFOR Schlepper 1 Driver";
 				};
 			};
 		};
@@ -552,7 +553,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV4_C";
-					description="BLUFOR IFV 4 Commander";
+					description="BLUFOR Schlepper 2 Commander";
 				};
 				class Item1
 				{
@@ -564,7 +565,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV4_G";
-					description="BLUFOR IFV 4 Gunner";
+					description="BLUFOR Schlepper 2 Gunner";
 				};
 				class Item2
 				{
@@ -575,7 +576,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV4_D";
-					description="BLUFOR IFV 4 Driver";
+					description="BLUFOR Schlepper 2 Driver";
 				};
 			};
 		};
@@ -596,7 +597,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_APC1_C";
-					description="BLUFOR APC 1 Commander";
+					description="BLUFOR Aggressor 1 Commander";
 				};
 				class Item1
 				{
@@ -608,7 +609,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_APC1_G";
-					description="BLUFOR APC 1 Gunner";
+					description="BLUFOR Aggressor 1 Gunner";
 				};
 				class Item2
 				{
@@ -619,7 +620,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_APC1_D";
-					description="BLUFOR APC 1 Driver";
+					description="BLUFOR Aggressor 1 Driver";
 				};
 			};
 		};
@@ -640,7 +641,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_APC2_C";
-					description="BLUFOR APC 2 Commander";
+					description="BLUFOR Aggressor 2 Commander";
 				};
 				class Item1
 				{
@@ -652,7 +653,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_APC2_G";
-					description="BLUFOR APC 2 Gunner";
+					description="BLUFOR Aggressor 2 Gunner";
 				};
 				class Item2
 				{
@@ -663,7 +664,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_APC2_D";
-					description="BLUFOR APC 2 Driver";
+					description="BLUFOR Aggressor 2 Driver";
 				};
 			};
 		};
@@ -684,7 +685,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_APC3_C";
-					description="BLUFOR APC 3 Commander";
+					description="BLUFOR Breaker 1 Commander";
 				};
 				class Item1
 				{
@@ -696,7 +697,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_APC3_G";
-					description="BLUFOR APC 3 Gunner";
+					description="BLUFOR Breaker 1 Gunner";
 				};
 				class Item2
 				{
@@ -707,7 +708,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_APC3_D";
-					description="BLUFOR APC 3 Driver";
+					description="BLUFOR Breaker 1 Driver";
 				};
 			};
 		};
@@ -728,7 +729,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_APC4_C";
-					description="BLUFOR APC 4 Commander";
+					description="BLUFOR Breaker 2 Commander";
 				};
 				class Item1
 				{
@@ -740,7 +741,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_APC4_G";
-					description="BLUFOR APC 4 Gunner";
+					description="BLUFOR Breaker 2 Gunner";
 				};
 				class Item2
 				{
@@ -751,7 +752,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_APC4_D";
-					description="BLUFOR APC 4 Driver";
+					description="BLUFOR Breaker 2 Driver";
 				};
 			};
 		};

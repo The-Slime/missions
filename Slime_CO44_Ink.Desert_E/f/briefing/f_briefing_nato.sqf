@@ -19,7 +19,7 @@ Made with Wavelength.
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+M1A1 units will be using APC Bluforce trackers
 "]];
 
 // ====================================================================================

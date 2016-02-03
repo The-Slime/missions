@@ -174,12 +174,12 @@ switch true do {
     };
     case (_input in ["APC1","APC2"]):
     {
-        _texture = _mech;
+        _texture = _armor;
         _color = _green;
     };
     case (_input in ["APC3","APC4"]):
     {
-        _texture = _mech;
+        _texture = _armor;
         _color = _orange;
     };
     case (_input in ["TH1","TH2"]):
