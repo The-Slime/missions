@@ -3,7 +3,6 @@ class Mission
 {
 	addOns[]=
 	{
-		"lop_faction_sla",
 		"A3_Structures_F_Mil_BagBunker",
 		"A3_Structures_F_Walls",
 		"A3_Signs_F",
@@ -15,23 +14,29 @@ class Mission
 		"rhsusf_c_hmmwv",
 		"rhsusf_vehicles",
 		"rhsusf_c_fmtv",
-		"RHS_US_A2Port_Armor"
+		"RHS_US_A2Port_Armor",
+		"A3_Characters_F_Gamma",
+		"A3_Soft_F_Gamma_Offroad",
+		"a3_soft_f_offroad_01",
+		"cup_sara_config"
 	};
 	addOnsAuto[]=
 	{
-		"lop_faction_sla",
-		"A3_Characters_F_BLUFOR",
+		"A3_Characters_F_Gamma",
 		"a3_characters_f",
+		"A3_Characters_F_BLUFOR",
 		"A3_Characters_F_EPC",
 		"dac_source",
 		"A3_Structures_F_Mil_BagBunker",
+		"A3_Soft_F_Gamma_Offroad",
+		"a3_soft_f_offroad_01",
 		"A3_Structures_F_Walls",
 		"A3_Signs_F",
 		"rhsusf_c_hmmwv",
 		"rhsusf_vehicles",
 		"rhsusf_c_fmtv",
 		"RHS_US_A2Port_Armor",
-		"aia_hotfix_config"
+		"cup_sara_config"
 	};
 	randomSeed=57498;
 	class Intel
@@ -73,7 +78,7 @@ class Mission
 					offsetY=0.00144577;
 					id=0;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_Engineer";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -92,7 +97,7 @@ class Mission
 					offsetY=0.00148964;
 					id=1;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_MG_Asst";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -111,7 +116,7 @@ class Mission
 					offsetY=2.8087101;
 					id=2;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_MG";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -130,7 +135,7 @@ class Mission
 					offsetY=0.00148773;
 					id=3;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_GL";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -149,7 +154,7 @@ class Mission
 					offsetY=0.0014190699;
 					id=4;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_SL";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -168,7 +173,7 @@ class Mission
 					offsetY=2.8196399;
 					id=5;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_MG";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -187,7 +192,7 @@ class Mission
 					offsetY=0.00167084;
 					id=6;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_MG_Asst";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -205,7 +210,7 @@ class Mission
 					offsetY=0.00125122;
 					id=7;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_SL";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -224,7 +229,7 @@ class Mission
 					offsetY=0.00144196;
 					id=8;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_GL";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -243,7 +248,7 @@ class Mission
 					offsetY=0.00162506;
 					id=9;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_Engineer";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -262,7 +267,7 @@ class Mission
 					offsetY=2.73224;
 					id=10;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_SL";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -281,7 +286,7 @@ class Mission
 					offsetY=0.0017375899;
 					id=11;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_GL";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -300,7 +305,7 @@ class Mission
 					offsetY=0.0014095301;
 					id=12;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_MG_Asst";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -319,7 +324,7 @@ class Mission
 					offsetY=0.00145721;
 					id=13;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_Engineer";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -338,7 +343,7 @@ class Mission
 					offsetY=0.00138474;
 					id=14;
 					side="EAST";
-					vehicle="LOP_SLA_Infantry_MG";
+					vehicle="O_G_Soldier_F";
 					leader=1;
 					skill=0.5;
 				};
@@ -1209,7 +1214,7 @@ class Mission
 			offsetY=0.0086250296;
 			id=74;
 			side="EMPTY";
-			vehicle="LOP_SLA_UAZ_Open";
+			vehicle="O_G_Offroad_01_F";
 			skill=0.60000002;
 		};
 		class Item2
@@ -1326,7 +1331,7 @@ class Mission
 			offsetY=0.0062789898;
 			id=86;
 			side="EMPTY";
-			vehicle="LOP_SLA_UAZ_Open";
+			vehicle="O_G_Offroad_01_F";
 			skill=0.60000002;
 		};
 		class Item14
@@ -1419,7 +1424,7 @@ class Mission
 			offsetY=0.0103073;
 			id=96;
 			side="EMPTY";
-			vehicle="LOP_SLA_UAZ_Open";
+			vehicle="O_G_Offroad_01_F";
 			skill=0.60000002;
 		};
 		class Item24
@@ -1535,7 +1540,7 @@ class Mission
 			text="Tlaloc - 3 squads + 1 light armor";
 			name="tlaloc";
 			expCond="time > 1";
-			expActiv="fun =[""tlaloc"",[1,0,0],[3,3,18,6],[],[1,1,6,6],[],[0,23,0,0,1]] spawn DAC_Zone";
+			expActiv="fun =[""tlaloc"",[1,0,0],[3,3,18,6],[],[1,1,6,6],[],[0,7,0,0,1]] spawn DAC_Zone";
 			class Effects
 			{
 			};
@@ -1554,7 +1559,7 @@ class Mission
 			text="Pacamac - 2 squads";
 			name="pacamac";
 			expCond="time > 1";
-			expActiv="fun =[""pacamac"",[2,0,0],[2,3,18,9],[],[],[],[0,23,0,0,1]] spawn DAC_Zone";
+			expActiv="fun =[""pacamac"",[2,0,0],[2,3,18,9],[],[],[],[0,7,0,0,1]] spawn DAC_Zone";
 			class Effects
 			{
 			};
@@ -1573,7 +1578,7 @@ class Mission
 			text="Hunapu - 3 squads + 1 light armor";
 			name="hunapu";
 			expCond="time > 1";
-			expActiv="fun =[""hunapu"",[3,0,0],[3,3,18,9],[],[1,1,6,6],[],[0,23,0,0,1]] spawn DAC_Zone";
+			expActiv="fun =[""hunapu"",[3,0,0],[3,3,18,9],[],[1,1,6,6],[],[0,7,0,0,1]] spawn DAC_Zone";
 			class Effects
 			{
 			};
@@ -1584,11 +1589,12 @@ class Intro
 {
 	addOns[]=
 	{
-		"aia_hotfix_config"
+		"aia_hotfix_config",
+		"cup_sara_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_hotfix_config"
+		"cup_sara_config"
 	};
 	randomSeed=57498;
 	class Intel
@@ -1604,11 +1610,12 @@ class OutroWin
 {
 	addOns[]=
 	{
-		"aia_hotfix_config"
+		"aia_hotfix_config",
+		"cup_sara_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_hotfix_config"
+		"cup_sara_config"
 	};
 	randomSeed=57498;
 	class Intel
@@ -1624,11 +1631,12 @@ class OutroLoose
 {
 	addOns[]=
 	{
-		"aia_hotfix_config"
+		"aia_hotfix_config",
+		"cup_sara_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_hotfix_config"
+		"cup_sara_config"
 	};
 	randomSeed=57498;
 	class Intel
