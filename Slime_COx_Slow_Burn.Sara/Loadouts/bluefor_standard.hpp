@@ -279,10 +279,11 @@ class blu_f {
         headgear[] = {}; /// randomized
         backpack[] = {"B_Carryall_khk"};
         weapons[] = {WEST_SMG}; /// randomized
-        magazines[] = {WEST_SMG_MAG_MAG,WEST_SMOKE_WHITE};
+        magazines[] = {WEST_SMG_MAG,WEST_SMOKE_WHITE};
         items[] = {"MEDICAL_STANDARD"};
         backpackItems[] += {"ACE_key_west","ACRE_PRC343","ACRE_PRC117F"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemGPS"};
+		attachments[] = {};
     };
 
     class B_soldier_repair_F: B_crew_F {// Repair Specialist
