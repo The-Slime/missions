@@ -19,9 +19,7 @@ Made with Wavelength.
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-Bet I'm forgetting something
-
-(as I wrote that I remembered that I forgot to find vehicles for the inf lol)
+Not actually SLA, they were part of LOP which got removed. Generic rebels instead.
 "]];
 
 // ====================================================================================
@@ -97,7 +95,7 @@ With Bagango under our control, the SLA is effectively pinned into the western h
 <br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-SLA, about a platoon, with light armor support. They operate a variety of older Soviet vehicles so we cannot give you a good idea of what it is.
+SLA, about a platoon, with light armor support. They operate a variety of older Soviet vehicles so we cannot give you a good idea of what it is, but we can confirm that they do not have MBTs.
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
