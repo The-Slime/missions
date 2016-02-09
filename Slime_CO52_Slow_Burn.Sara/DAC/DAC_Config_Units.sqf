@@ -854,7 +854,10 @@ _Unit_Pool_T = [
 	"LOP_SLA_BMP2",
 	"LOP_SLA_BMP2D",
 	"LOP_SLA_BTR60",
-	"LOP_SLA_BTR70"
+	"LOP_SLA_BTR70",
+	"LOP_SLA_T72BA",
+	"LOP_SLA_T72BB",
+	"LOP_SLA_ZSU234"
 ];
 _Unit_Pool_A = [
 	"LOP_SLA_Mi8MT_Cargo",
