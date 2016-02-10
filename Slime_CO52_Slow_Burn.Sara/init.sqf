@@ -1,3 +1,7 @@
+if (isServer) then {
+	[] execVM "bsm_zoneOff.sqf";
+};
+
 // All things marked F3 come from F3 code. All things marked otherwise come from that source.
 // ====================================================================================
 

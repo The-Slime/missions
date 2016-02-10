@@ -361,7 +361,7 @@ class Mission
 					id=15;
 					side="WEST";
 					vehicle="B_officer_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -1500,7 +1500,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=3;
+		items=17;
 		class Item0
 		{
 			position[]={10766.859,0.0076250117,12471.783};
@@ -1521,6 +1521,102 @@ class Mission
 			name="markernameshouldquitewellbeemptybis_2";
 			type="hd_objective";
 			colorName="ColorEAST";
+		};
+		class Item3
+		{
+			position[]={13317.101,27.401234,11060.845};
+			name="motorpool";
+			text="Motor Pool";
+			type="mil_dot";
+			colorName="ColorWEST";
+		};
+		class Item4
+		{
+			position[]={13360.025,26.647711,11071.141};
+			name="armor";
+			text="Armored Assets";
+			type="mil_dot";
+			colorName="ColorWEST";
+		};
+		class Item5
+		{
+			position[]={13356.77,27.830976,11182.039};
+			name="CMD";
+			text="CMD";
+			type="mil_circle";
+			colorName="ColorWEST";
+		};
+		class Item6
+		{
+			position[]={13297.59,27.429667,11130.037};
+			name="alpha";
+			text="Alpha";
+			type="mil_circle";
+			colorName="ColorWEST";
+		};
+		class Item7
+		{
+			position[]={13349.924,27.540274,11116.031};
+			name="alpha_1";
+			text="Bravo";
+			type="mil_circle";
+			colorName="ColorWEST";
+		};
+		class Item8
+		{
+			position[]={13406.493,27.86647,11129.67};
+			name="alpha_2";
+			text="Charlie";
+			type="mil_circle";
+			colorName="ColorWEST";
+		};
+		class Item9
+		{
+			position[]={13519.686,19.025404,10218.537};
+			name="fill_1";
+			type="Empty";
+		};
+		class Item10
+		{
+			position[]={14522.76,55.018772,10398.604};
+			name="fill_2";
+			type="Empty";
+		};
+		class Item11
+		{
+			position[]={15011.439,73.989868,11367.524};
+			name="fill_3";
+			type="Empty";
+		};
+		class Item12
+		{
+			position[]={14385.587,53.834042,12319.297};
+			name="fill_4";
+			type="Empty";
+		};
+		class Item13
+		{
+			position[]={7998.4844,111.23317,16640.857};
+			name="fill_5";
+			type="Empty";
+		};
+		class Item14
+		{
+			position[]={7394.1855,135.00749,16384};
+			name="fill_6";
+			type="Empty";
+		};
+		class Item15
+		{
+			position[]={7267.6699,30.213455,15813.295};
+			name="fill_7";
+			type="Empty";
+		};
+		class Item16
+		{
+			position[]={7661.1899,19.272581,14444.144};
+			name="fill_8";
+			type="Empty";
 		};
 	};
 	class Sensors
