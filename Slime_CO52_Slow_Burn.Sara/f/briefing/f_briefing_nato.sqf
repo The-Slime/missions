@@ -7,7 +7,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-Slimayo
+The Slime
 <br/><br/>
 Made with Wavelength.
 "]];
@@ -19,7 +19,9 @@ Made with Wavelength.
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-Not actually SLA, they were part of LOP which got removed. Generic rebels instead.
+SLA are the generic red rebels because the SLA faction as part of LOP which got removed.
+<br/><br/>
+Toggle the magnifier with Numpad Slash. Can be rebound in addon controls under BWA3.
 "]];
 
 // ====================================================================================
@@ -67,11 +69,19 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 <font size='18'>COMMANDER'S INTENT</font>
 <br/>
-Push along the coastal highway
+Push up the coast and secure the marked towns to deny the enemy an escape route.
 <br/><br/>
 <font size='18'>MOVEMENT PLAN</font>
 <br/>
-Will be up to the commander. Vehicles are provided for a convoy.
+It is up to the leader of your unit. Vehicles are provided to the SW.
+<br/><br/>
+<font size='18'>FIRE SUPPORT PLAN</font>
+<br/>
+Two Bradleys have been made available. They are to the south.
+<br/><br/>
+<font size='18'>SPECIAL TASKS</font>
+<br/>
+No special tasking available.
 "]];
 
 // ====================================================================================
@@ -81,7 +91,7 @@ Will be up to the commander. Vehicles are provided for a convoy.
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-Push along the coastal highway and secure the marked towns so that the SLA is denied access to an escape route.
+Push up the southern coastline of the peninsula and secure the area so as to deny the enemy an escape route.
 "]];
 
 // ====================================================================================
@@ -95,11 +105,11 @@ With Bagango under our control, the SLA is effectively pinned into the western h
 <br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-SLA, about a platoon, with light armor support. They operate a variety of older Soviet vehicles so we cannot give you a good idea of what it is, but we can confirm that they do not have MBTs.
+Some SLA with access to light armor assets, cheap Soviet shit
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
-Sahrani Governmental Forces
+Sahrani Govt Forces
 "]];
 
 // ====================================================================================
