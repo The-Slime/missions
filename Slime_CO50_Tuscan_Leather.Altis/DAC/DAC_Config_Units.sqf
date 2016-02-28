@@ -284,7 +284,6 @@ _Unit_Pool_S = [
 	"O_G_engineer_F"
 ];
 _Unit_Pool_V = [
-	"O_G_Offroad_01_F",
 	"O_G_Offroad_01_armed_F"
 ];
 _Unit_Pool_T = [];
