@@ -7,7 +7,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Slime
 <br/><br/>
 Made with Wavelength.
 "]];
@@ -19,7 +19,7 @@ Made with Wavelength.
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+RELOADING THE MORTAR: Grab a new tube and place it onto the same bipod
 "]];
 
 // ====================================================================================
@@ -65,21 +65,17 @@ From 30 to 39 for Infantry Support (MMG etc)
 
 _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
-<font size='18'>COMMANDER'S INTENT</font>
-<br/>
-*** Insert very short summary of plan here. ***
-<br/><br/>
 <font size='18'>MOVEMENT PLAN</font>
 <br/>
-*** Insert movement instructions here. ***
+You will be inserted via HALO drop into the area of operations. Due to the nature of the parachutes you will not have backpacks and will thus be using a reduced load of equipment compared to normal.
 <br/><br/>
 <font size='18'>FIRE SUPPORT PLAN</font>
 <br/>
-*** Insert fire support instructions here. ***
+A mortar team will drop in with you. We have placed mortar equipment in a certain location for them, marked on your maps. Once the C130 has returned to base an MH6M with the fancy camera will be deployed for recon/SAR purposes.
 <br/><br/>
 <font size='18'>SPECIAL TASKS</font>
 <br/>
-*** Insert instructions for specific units here. ***
+New tasking may be assigned as the mission gets underway.
 "]];
 
 // ====================================================================================
@@ -89,7 +85,7 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-*** Insert the mission here. ***
+Assault Oreokastro. Simple as that.
 "]];
 
 // ====================================================================================
@@ -99,15 +95,7 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
-<br/><br/>
-<font size='18'>ENEMY FORCES</font>
-<br/>
-*** Insert information about enemy forces here.***
-<br/><br/>
-<font size='18'>FRIENDLY FORCES</font>
-<br/>
-*** Insert information about friendly forces here.***
+The enemy has set up operations in the destroyed mountain village of Oreokastro. This gives them the potential to harass our air operations. We must destroy their position before they can deploy anti-air assets to the area.
 "]];
 
 // ====================================================================================
