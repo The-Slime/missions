@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=694;
+		nextID=692;
 	};
 	class MarkerIDProvider
 	{
@@ -1706,14 +1706,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4578.2173,301.36206,21446.82};
-						angles[]={6.2418756,3.0393956,6.2472029};
+						position[]={4592.4868,300.17163,21492.721};
+						angles[]={0.059917156,3.6876361,6.2471962};
 					};
 					side="East";
 					flags=2;
 					class Attributes
 					{
-						name="runnerD";
 					};
 					id=686;
 					type="O_Soldier_F";
@@ -1721,7 +1720,7 @@ class Mission
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={4579.9512,300.44049,21435.568};
+					position[]={4587.7124,300.79105,21484.074};
 					class Effects
 					{
 					};
@@ -1770,11 +1769,11 @@ class Mission
 		class Item40
 		{
 			dataType="Trigger";
-			position[]={4589.7769,299.58765,21405.311};
+			position[]={4600.8569,299.53,21388.195};
 			class Attributes
 			{
 				text="Truck Trigger";
-				onActivation="hint ""A military vehicle unaffiliated with the rebels has been spotted in the town. It looks like it is going to leave soon. Only engage it if it does not flee, but if it does, have your recon helo track it to its destination.""; runner allowDamage true;";
+				onActivation="hint ""A military vehicle unaffiliated with the rebels has been spotted in the town. It looks like it is going to leave soon. Only engage it if it does not flee, but if it does, have your recon helo track it to its destination.""";
 				sizeA=241.03101;
 				sizeB=241.03101;
 				timeout[]={10,10,10};
@@ -1789,15 +1788,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4578.2944,303.50415,21446.896};
-				angles[]={6.2418756,3.0393956,6.2472029};
+				position[]={4592.564,302.31372,21492.797};
+				angles[]={0.059917156,3.6876361,6.2471962};
 			};
 			side="East";
 			flags=2;
 			class Attributes
 			{
-				init="this allowDamage false";
-				name="runner";
 			};
 			id=685;
 			type="O_Truck_03_ammo_F";

@@ -90,7 +90,7 @@ class blu_f {
 
     class Plane {
         TransportMagazines[] = {};
-        TransportBackpack[] = {"B_Parachute:2"};
+        TransportBackpack[] = {"B_Parachute:30"};
     };
 
     class Ship_F {
@@ -124,7 +124,7 @@ class blu_f {
     };
 
     class B_Soldier_SL_F: B_Officer_F {// SL
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","Binocular"};
+        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","ACE_Vector"};
         items[] = {"ACE_MapTools","ACRE_PRC148", "ACRE_PRC343","MEDICAL_LEADER","ACE_IR_Strobe_item"};
         backpackItems[] = {};
     };
@@ -145,7 +145,7 @@ class blu_f {
     class B_Soldier_TL_F: B_Soldier_F {// FTL
         weapons[] = {WEST_RIFLE};
         magazines[] = {WEST_RIFLE_MAG,WEST_SMOKE_WHITE,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_GRENADE,WEST_SMOKE_WHITE};
-        linkedItems[] += {"ItemGPS","Binocular"};
+        linkedItems[] += {"ItemGPS","ACE_Vector"};
     };
 
     class B_Soldier_AR_F: B_Soldier_F {// AR
@@ -155,7 +155,7 @@ class blu_f {
 
     class B_Soldier_AAR_F: B_Soldier_F {// AAR
         items[] += {WEST_AR_MAG2};
-        linkedItems[] += {"Binocular"};
+        linkedItems[] += {"ACE_Vector"};
 		attachments[] = {"UK3CB_BAF_LLM_IR_Black","optic_Nightstalker"};
     };
 
