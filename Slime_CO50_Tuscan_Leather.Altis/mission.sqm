@@ -40,7 +40,6 @@ randomSeed=9886171;
 class ScenarioData
 {
 	aIKills=1;
-	disabledAI=1;
 };
 class CustomAttributes
 {
@@ -48,25 +47,6 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -99,6 +79,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -1221,7 +1220,7 @@ class Mission
 						skill=0.60000002;
 						rank="CAPTAIN";
 						name="UnitNATO_AH1_P";
-						description="BLUFOR Attack Helo 1 Pilot";
+						description="BLUFOR C130/MH6M Pilot";
 						isPlayable=1;
 					};
 					id=311;
@@ -1240,7 +1239,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						name="UnitNATO_AH1_CP";
-						description="BLUFOR Attack Helo 1 Gunner";
+						description="BLUFOR Loadmaster/Camera Operator";
 						isPlayable=1;
 					};
 					id=312;
