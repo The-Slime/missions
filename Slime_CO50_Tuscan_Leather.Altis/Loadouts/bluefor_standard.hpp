@@ -110,7 +110,7 @@ class blu_f {
         launchers[] = {}; /// randomized
         handguns[] = {}; /// randomized
         magazines[] = {WEST_RIFLE_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
-        items[] = {"ACRE_PRC343","MEDICAL_STANDARD","ACE_IR_Strobe_item"};
+        items[] = {"ACRE_PRC343","MEDICAL_STANDARD","ACE_IR_Strobe_item","ACE_Flashlight_MX991"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles"};
         attachments[] = {"UK3CB_BAF_LLM_IR_Black","UK3CB_BAF_Eotech"};
     };
@@ -120,12 +120,12 @@ class blu_f {
         magazines[] = {WEST_RIFLE_MAG,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_SMOKE_GREEN};
         handguns[] = {WEST_PISTOL}; /// randomized
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","ACE_Vector"};
-        items[] = {"ACE_MapTools","ACRE_PRC148"};
+        items[] = {"ACE_MapTools","ACRE_PRC148","ACE_Flashlight_MX991"};
     };
 
     class B_Soldier_SL_F: B_Officer_F {// SL
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","ACE_Vector"};
-        items[] = {"ACE_MapTools","ACRE_PRC148", "ACRE_PRC343","MEDICAL_LEADER","ACE_IR_Strobe_item"};
+        items[] = {"ACE_MapTools","ACRE_PRC148", "ACRE_PRC343","MEDICAL_LEADER","ACE_IR_Strobe_item","ACE_Flashlight_MX991"};
         backpackItems[] = {};
     };
 
@@ -188,7 +188,7 @@ class blu_f {
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
         launchers[] = {WEST_MAT}; /// randomized
-        items[] = {"MEDICAL_STANDARD","ACRE_PRC148"};
+        items[] = {"MEDICAL_STANDARD","ACRE_PRC148","ACE_Flashlight_MX991"};
         backpackItems[] = {WEST_MAT_MAG};
     };
 
@@ -214,12 +214,12 @@ class blu_f {
     class B_support_Mort_F: B_Soldier_F {// Mortar Gunner
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
-        items[] = {"MEDICAL_STANDARD"};
+        items[] = {"MEDICAL_STANDARD","ACE_Flashlight_MX991"};
     };
 
     class B_support_AMort_F: B_Soldier_F {// Assistant Mortar
         linkedItems[] += {"ACE_Vector"};
-        items[] = {"MEDICAL_STANDARD","ACRE_PRC148"};
+        items[] = {"MEDICAL_STANDARD","ACRE_PRC148","ACE_Flashlight_MX991"};
     };
 
     class B_spotter_F {// Spotter
@@ -255,7 +255,7 @@ class blu_f {
         weapons[] = {WEST_SMG}; /// randomized
         magazines[] = {WEST_SMG_MAG,WEST_SMOKE_WHITE};
         backpackItems[] += {"ACE_key_west","ACRE_PRC117F"};
-        items[] = {"MEDICAL_STANDARD","ACRE_PRC148"};
+        items[] = {"MEDICAL_STANDARD","ACRE_PRC148","ACE_Flashlight_MX991"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","NVgoggles"};
     };
 

@@ -13,7 +13,7 @@ class CfgLoadouts {
             items[] = {"ACE_fieldDressing:4","ACE_morphine"};
         };
         class MEDIC {
-            items[] = {"ACE_fieldDressing:6","ACE_epinephrine:4","ACE_morphine:8"};
+            items[] = {"ACE_fieldDressing:12","ACE_epinephrine:8","ACE_morphine:16"};
         };
         class VEHICLE {
             items[] = {"ACE_fieldDressing:12","ACE_morphine:4"};
