@@ -158,6 +158,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_PLT_R1";
+					description="BLUFOR Scout 1";
 				};
 				class Item5
 				{
@@ -169,6 +170,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_PLT_R2";
+					description="BLUFOR Scout 2";
 				};
 			};
 		};
