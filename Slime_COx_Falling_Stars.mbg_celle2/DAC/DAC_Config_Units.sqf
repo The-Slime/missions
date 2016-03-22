@@ -364,14 +364,8 @@ _Unit_Pool_V = [
 	"rhs_tigr_msv", //MRAP
 	"RHS_UAZ_MSV_01",
 	"rhs_uaz_open_MSV_01",
-	"RHS_BM21_MSV_01", //rocket truck
 	"rhs_gaz66_msv",
 	"rhs_gaz66o_msv",
-	"rhs_gaz66_r142_msv", //radio truck
-	"rhs_gaz66_ap2_msv", //ambulance
-	"RHS_Ural_MSV_01",
-	"rhs_gaz66_repair_msv",
-	"RHS_Ural_Fuel_MSV_01"
 ];
 _Unit_Pool_T = [
 	"rhs_btr60_msv",
@@ -387,7 +381,8 @@ _Unit_Pool_T = [
 	"rhs_bmp2e_msv",
 	"rhs_bmp2d_msv",
 	"rhs_bmp2k_msv",
-	"rhs_prp3_msv"
+	"rhs_prp3_msv",
+	"rhs_asu234_aa"
 ];
 _Unit_Pool_A = [];
 };
