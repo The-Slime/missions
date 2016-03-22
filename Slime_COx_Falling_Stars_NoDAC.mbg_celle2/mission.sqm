@@ -8,14 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=402;
+		nextID=404;
+	};
+	class MarkerIDProvider
+	{
+		nextID=2;
 	};
 	class Camera
 	{
-		pos[]={6890.5767,44.330002,7858.9004};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={6715.6597,205.87627,7971.769};
+		dir[]={-0.040359549,-0.99753213,0.05766717};
+		up[]={-0.57197034,0.070342913,0.81725204};
+		aside[]={0.81929034,-1.5622936e-007,0.57339805};
 	};
 };
 binarizationWanted=0;
@@ -67,7 +71,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=75;
+		items=77;
 		class Item0
 		{
 			dataType="Object";
@@ -4369,6 +4373,26 @@ class Mission
 			};
 			id=392;
 			type="rhs_zsu234_aa";
+		};
+		class Item75
+		{
+			dataType="Marker";
+			position[]={6720.4761,19.32,7967.082};
+			name="marker_0";
+			text="Command Post";
+			type="mil_box";
+			colorName="ColorWEST";
+			id=402;
+		};
+		class Item76
+		{
+			dataType="Marker";
+			position[]={6707.8872,19.32,7991.1523};
+			name="marker_2";
+			text="Medical Post";
+			type="mil_box";
+			colorName="ColorEAST";
+			id=403;
 		};
 	};
 };

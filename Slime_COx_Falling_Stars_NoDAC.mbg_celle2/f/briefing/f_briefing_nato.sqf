@@ -7,7 +7,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Slime
 <br/><br/>
 Made with Wavelength.
 "]];
@@ -19,7 +19,10 @@ Made with Wavelength.
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+The loadouts got a bit convoluted. Report any issues to the admins using the text box thingy in the top left of the pause menu, you know the one.<br/><br/>
+HAT: Asst should give his tube to the gunner when he needs it. With CLU in bino slot, press CtrlB to assemble the tube and CLU. You may have to be in FLIR and NFOV to lock something up. CtrlTab to cycle between top and direct attack.<br/><br/>
+AARs: Congratulations, you're worth something for once, you have marksman rifles due to the long sight lines around the town.<br/><br/>
+Tanks are stored in the enclave south of the CP. If they are unoccupied then the admin should delete them in Zeus so as to avoid clutter.
 "]];
 
 // ====================================================================================
@@ -67,19 +70,19 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 <font size='18'>COMMANDER'S INTENT</font>
 <br/>
-*** Insert very short summary of plan here. ***
+Defend the town of Bergen from imminent enemy assault
 <br/><br/>
 <font size='18'>MOVEMENT PLAN</font>
 <br/>
-*** Insert movement instructions here. ***
+Defenseive positions have been established
 <br/><br/>
 <font size='18'>FIRE SUPPORT PLAN</font>
 <br/>
-*** Insert fire support instructions here. ***
+2x NATO A10Ds will be on station, but they must watch out for enemy SAM/AAA cover
 <br/><br/>
 <font size='18'>SPECIAL TASKS</font>
 <br/>
-*** Insert instructions for specific units here. ***
+None
 "]];
 
 // ====================================================================================
@@ -89,7 +92,7 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-*** Insert the mission here. ***
+Hold out against a Russian combined arms assault
 "]];
 
 // ====================================================================================
@@ -99,15 +102,15 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
+As a result of hightened tensions between Russia and Western European nations, the former has engaged in a land-war show of force, pushing deep into Western Germany.
 <br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-*** Insert information about enemy forces here.***
+Combined arms assault likely to consist of mechanized infantry, heavy armor, and an air defense network.
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
-*** Insert information about friendly forces here.***
+Bundeswehr surrounded in the town of Bergen.
 "]];
 
 // ====================================================================================
