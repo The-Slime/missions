@@ -7,7 +7,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Slime w/ some assistance from Vlad
 <br/><br/>
 Made with Wavelength.
 "]];
@@ -19,7 +19,7 @@ Made with Wavelength.
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+Yes the ARs are just rifles with 100rd mags and bipods. MG36MLIs don't exist in the modpack so we gotta deal. Puma only having AP cannon is to avoid it being OP, it should still have the coax and the ATGMs.
 "]];
 
 // ====================================================================================
@@ -31,29 +31,19 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 <font size='18'>COMMANDER'S INTENT</font>
 <br/>
-*** Insert very short summary of plan here. ***
+Clear and secure the 3 towns of Wolthausen, Walle, and Meissendorf.
 <br/><br/>
 <font size='18'>MOVEMENT PLAN</font>
 <br/>
-*** Insert movement instructions here. ***
+The distance makes infantry movement practical without vehicle support, but trucks have been provided for utility and versatility. The Puma can also hold up to 6 passengers.
 <br/><br/>
 <font size='18'>FIRE SUPPORT PLAN</font>
 <br/>
-*** Insert fire support instructions here. ***
+Puma IFV and MG5 team available
 <br/><br/>
-<font size='18'>SPECIAL TASKS</font>
+<font size='18'>SPECIAL NOTES</font>
 <br/>
-*** Insert instructions for specific units here. ***
-"]];
-
-// ====================================================================================
-
-// NOTES: MISSION
-// The code below creates the mission sub-section of notes.
-
-_mis = player createDiaryRecord ["diary", ["Mission","
-<br/>
-*** Insert the mission here. ***
+Puma has not been loaded with HE or airburst munitions. Recommended to save the ATGMs in case enemy armor based in Winsen-Aller is encountered.
 "]];
 
 // ====================================================================================
@@ -63,15 +53,15 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
+An unknown enemy force has occupied significant regions of the Celle region without any declaration of war. Nobody recognizes their patches,a nd their camo patterns are completely unknown as well. For now they are being considered a terrorist group with capabilities on the level of the armed forces of a first-world nation. Our mission is complete destruction of their forces.
 <br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-*** Insert information about enemy forces here.***
+Unknown terrorist group with significant armored support and infantry strength. Initial intelligence points to one infantry company and approximately 3 armored vehicles present in the three objective towns. Heavy armor has been spotted in Winsen-Aller so it is HIGHLY recommended that you avoid approaching that area without air or heavy armor support. For now just take hold of the 3 marked towns.
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
-*** Insert information about friendly forces here.***
+Infantry platoon of Bundeswehr-Heer with attached Puma IFV and MG5 gun-team.
 "]];
 
 // ====================================================================================
