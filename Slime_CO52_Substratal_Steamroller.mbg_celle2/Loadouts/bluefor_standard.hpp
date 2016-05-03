@@ -236,15 +236,9 @@ class blu_f {
         items[] = {"MEDICAL_STANDARD","ACRE_PRC148"};
     };
 
-    class B_spotter_F {// Spotter
-        uniform[] = {"U_B_CombatUniform_mcam"};  /// randomized
-        vest[] = {"V_Chestrig_rgr"}; /// randomized
-        headgear[] = {"H_Watchcap_camo"}; /// randomized
-        weapons[] = {WEST_SPOTTER}; /// randomized
-        magazines[] = {WEST_SPOTTER_MAG,WEST_SMOKE_WHITE,WEST_GRENADE};
+    class B_spotter_F: B_Soldier_F {// Spotter
         items[] = {"MEDICAL_STANDARD", "ACRE_PRC343", "ACRE_PRC148"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemGPS","LaserDesignator"};
-        attachments[] = {"optic_Holosight","acc_pointer_IR"};
     };
 
     class B_sniper_F {// Sniper
