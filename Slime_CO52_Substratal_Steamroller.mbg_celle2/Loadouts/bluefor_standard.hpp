@@ -169,8 +169,11 @@ class blu_f {
         linkedItems[] += {"Binocular"};
     };
 
-    class B_Soldier_A_F: B_Soldier_AAR_F {// AAR
-
+    class B_Soldier_A_F: B_Soldier_F {// MMG Ammo Bearer
+		backpack[] = {"BWA3_Kitbag_Fleck"};
+		backpackItems[] += {WEST_MMG_MAG};
+        linkedItems[] += {"ACE_Vector"};
+        items[] += {"ACRE_PRC148"};
     };
 
     class B_Soldier_LAT_F: B_Soldier_F {// RAT
@@ -289,9 +292,8 @@ class blu_f {
 
     class B_soldier_repair_F: B_crew_F {// Repair Specialist
         backpack[] = {"BWA3_Kitbag_Fleck"};
-        backpackItems[] = {"Toolkit"};
-        backpackItems[] += {"ACE_key_west","ACRE_PRC148","ACRE_PRC343"};
-        linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch"};
+        backpackItems[] = {"Toolkit","ACE_key_west","ACRE_PRC148","ACRE_PRC343"};
+        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
     };
 
     class B_soldier_exp_F: B_soldier_repair_F {// Explosive Specialist
