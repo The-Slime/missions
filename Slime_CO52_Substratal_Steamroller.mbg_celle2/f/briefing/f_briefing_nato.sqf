@@ -19,7 +19,7 @@ Made with Wavelength.
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-Yes the ARs are just rifles with 100rd mags and bipods. MG36MLIs don't exist in the modpack so we gotta deal. Puma only having AP cannon is to avoid it being OP, it should still have the coax and the ATGMs.
+Yes the ARs are just rifles with 100rd mags and bipods. MG36MLIs don't exist in the modpack so we gotta deal.
 "]];
 
 // ====================================================================================
@@ -31,11 +31,11 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 <font size='18'>COMMANDER'S INTENT</font>
 <br/>
-Clear and secure the 3 towns of Wolthausen, Walle, and Meissendorf.
+Clear and secure the 2 towns of Wolthausen, Walle.
 <br/><br/>
 <font size='18'>MOVEMENT PLAN</font>
 <br/>
-The distance makes infantry movement practical without vehicle support, but trucks have been provided for utility and versatility. The Puma can also hold up to 6 passengers.
+The distance makes infantry movement practical without vehicle support, but trucks have been provided for utility and versatility. The Puma can also hold up to 6 passengers (I think).
 <br/><br/>
 <font size='18'>FIRE SUPPORT PLAN</font>
 <br/>
@@ -43,7 +43,7 @@ Puma IFV and MG5 team available
 <br/><br/>
 <font size='18'>SPECIAL NOTES</font>
 <br/>
-Puma has not been loaded with HE or airburst munitions. Recommended to save the ATGMs in case enemy armor based in Winsen-Aller is encountered.
+Recommended to save the Puma's ATGMs in case enemy armor based in Winsen-Aller is encountered.
 "]];
 
 // ====================================================================================
@@ -53,11 +53,11 @@ Puma has not been loaded with HE or airburst munitions. Recommended to save the 
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-An unknown enemy force has occupied significant regions of the Celle region without any declaration of war. Nobody recognizes their patches,a nd their camo patterns are completely unknown as well. For now they are being considered a terrorist group with capabilities on the level of the armed forces of a first-world nation. Our mission is complete destruction of their forces.
+An unknown enemy force has occupied significant tracts of land in the Celle region without any declaration of war. Nobody recognizes their patches,a nd their camo patterns are completely unknown as well. For now they are being considered a terrorist group with capabilities on the level of the armed forces of a first-world nation. Our mission is complete destruction of their forces.
 <br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-Unknown terrorist group with significant armored support and infantry strength. Initial intelligence points to one infantry company and approximately 3 armored vehicles present in the three objective towns. Heavy armor has been spotted in Winsen-Aller so it is HIGHLY recommended that you avoid approaching that area without air or heavy armor support. For now just take hold of the 3 marked towns.
+Unknown terrorist group with significant armored support and infantry strength. Initial intelligence points to two infantry companies and approximately 3 armored vehicles present in the three objective towns. Heavy armor has been spotted in Winsen-Aller so it is HIGHLY recommended that you avoid approaching that area without air or heavy armor support. For now just take hold of the 2 marked towns.
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
