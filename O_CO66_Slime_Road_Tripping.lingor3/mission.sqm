@@ -1,0 +1,2093 @@
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=513;
+	class ItemIDProvider
+	{
+		nextID=690;
+	};
+	class MarkerIDProvider
+	{
+		nextID=3;
+	};
+	class Camera
+	{
+		pos[]={4765.4385,158.37221,2076.5989};
+		dir[]={-0.12399014,-0.78929669,-0.60146272};
+		up[]={-0.15936296,0.61399263,-0.77305198};
+		aside[]={-0.97945791,2.8166687e-007,0.20191599};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F",
+	"A3_Characters_F",
+	"ace_explosives",
+	"cba_xeh",
+	"dac_source",
+	"Taliban_fighters",
+	"rhs_c_a2port_car"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=7;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="ace_explosives";
+			name="ace_explosives";
+		};
+		class Item3
+		{
+			className="cba_xeh";
+			name="cba_xeh";
+		};
+		class Item4
+		{
+			className="DAC_Source";
+			name="DAC_Source.pbo";
+		};
+		class Item5
+		{
+			className="Taliban_fighters";
+			name="Taliban_fighters";
+		};
+		class Item6
+		{
+			className="rhs_c_a2port_car";
+			name="rhs_c_a2port_car";
+		};
+	};
+};
+randomSeed=1787544;
+class ScenarioData
+{
+	author="Slime";
+};
+class Mission
+{
+	class Intel
+	{
+		resistanceWest=0;
+		startWeather=0;
+		startWind=0;
+		forecastWeather=0;
+		forecastWind=0;
+		forecastWaves=0;
+		year=2035;
+		month=1;
+		day=1;
+		hour=12;
+		minute=0;
+		startFogDecay=0;
+		forecastFogDecay=0;
+	};
+	class Entities
+	{
+		items=42;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={502.27344,5,3231.4717};
+			name="required_modules";
+			text="REQUIRED";
+			type="mil_arrow";
+			colorName="ColorRed";
+			id=20;
+			atlOffset=22.283356;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={499.95096,5,3704.4907};
+			name="Example Dac Triggers";
+			text="Example Dac Zones";
+			type="mil_arrow";
+			colorName="ColorRed";
+			id=21;
+			atlOffset=22.283356;
+		};
+		class Item2
+		{
+			dataType="Marker";
+			position[]={553.58441,5,3482.7427};
+			name="respawn";
+			type="Empty";
+			id=22;
+			atlOffset=22.283356;
+		};
+		class Item3
+		{
+			dataType="Trigger";
+			position[]={935.52808,4.9999828,4277.6919};
+			class Attributes
+			{
+				name="z1";
+				text="This Generates 3 small squads of OPRFOR CSAT. They are in DAC ID Group 1";
+				condition="true";
+				onActivation="fun =[""z1"",[1,0,0],[3,3,20,6],[],[],[],[0,0,0,0,1]] spawn DAC_Zone";
+				sizeA=300;
+				sizeB=300;
+				interuptable=1;
+				repeatable=1;
+				activationBy="LOGIC";
+			};
+			id=23;
+			type="EmptyDetector";
+			atlOffset=22.283339;
+		};
+		class Item4
+		{
+			dataType="Trigger";
+			position[]={1031.8329,4.9999833,4278.958};
+			class Attributes
+			{
+				name="z2";
+				text="This generates 5 groups of wheeled vehicles with fireteams in them. They are in DAC ID Group 2. WEST NATO";
+				condition="true";
+				onActivation="fun =[""z2"",[2,0,0],[],[5,2,50,8],[],[],[1,1,1,1,1]] spawn DAC_Zone";
+				sizeA=300;
+				sizeB=300;
+				interuptable=1;
+				repeatable=1;
+				activationBy="LOGIC";
+			};
+			id=24;
+			type="EmptyDetector";
+			atlOffset=22.283339;
+		};
+		class Item5
+		{
+			dataType="Trigger";
+			position[]={1124.1523,4.9999828,4278.3774};
+			class Attributes
+			{
+				name="z3";
+				text="This generates 3 helicopters with fireteams for INDIFOR. They are apart of DAC ID group 3";
+				condition="true";
+				onActivation="fun =[""z3"",[3,0,0],[],[],[],[3,3,6],[2,2,1,1,1]] spawn DAC_Zone";
+				sizeA=300;
+				sizeB=300;
+				interuptable=1;
+				repeatable=1;
+				activationBy="LOGIC";
+			};
+			id=25;
+			type="EmptyDetector";
+			atlOffset=22.283339;
+		};
+		class Item6
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4666.6035,17.96941,1930.4161};
+						angles[]={0,2.3555069,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						name="UnitIND_PLT";
+						description="INDFOR Platoon Leader";
+						isPlayable=1;
+					};
+					id=237;
+					type="I_officer_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4661.9028,17.96941,1928.0441};
+						angles[]={0,2.3555069,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_PLT_M";
+						description="INDFOR Platoon HQ Medic";
+						isPlayable=1;
+					};
+					id=238;
+					type="I_medic_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4668.9692,17.96941,1935.12};
+						angles[]={0,2.3555069,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UnitIND_PSG";
+						description="INDFOR Platoon Sergeant";
+						isPlayable=1;
+					};
+					id=239;
+					type="I_Soldier_SL_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4656.4316,17.96941,1926.4414};
+						angles[]={0,2.3555069,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_PLT_FO";
+						description="INDFOR Forward Observer";
+						isPlayable=1;
+					};
+					id=240;
+					type="I_soldier_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4670.5645,17.9965,1940.5933};
+						angles[]={6.2333579,2.3555069,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UnitIND_PLT_R1";
+						description="INDFOR Scout 1";
+						isPlayable=1;
+					};
+					id=241;
+					type="I_Spotter_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4671.9902,18.189257,1944.4585};
+						angles[]={6.2333579,2.3555069,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_PLT_R2";
+						description="INDFOR Scout 2";
+						isPlayable=1;
+					};
+					id=242;
+					type="I_Spotter_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=236;
+		};
+		class Item7
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4692.6147,17.941214,1906.5995};
+						angles[]={0,2.4512334,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UnitIND_ASL_SL";
+						description="INDFOR Alpha Squad Leader";
+						isPlayable=1;
+					};
+					id=244;
+					type="I_Soldier_SL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4687.709,17.941214,1904.6875};
+						angles[]={0,2.4512334,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_ASL_M";
+						description="INDFOR Alpha Medic";
+						isPlayable=1;
+					};
+					id=245;
+					type="I_medic_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=243;
+		};
+		class Item8
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4749.9453,17.96941,1957.0618};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_A1_FTL";
+						description="INDFOR Alpha 1 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=247;
+					type="I_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4745.1426,17.96941,1954.9039};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_A1_AR";
+						description="INDFOR Alpha 1 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=248;
+					type="I_Soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4752.5205,17.96941,1961.6542};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_A1_AAR";
+						description="INDFOR Alpha 1 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=249;
+					type="I_Soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4739.605,17.969412,1953.5494};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_A1_AT";
+						description="INDFOR Alpha 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=250;
+					type="I_Soldier_LAT_F";
+					atlOffset=1.9073486e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=246;
+		};
+		class Item9
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4738.1709,17.96941,1969.7861};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_A2_FTL";
+						description="INDFOR Alpha 2 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=252;
+					type="I_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4733.3682,17.96941,1967.6283};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_A2_AR";
+						description="INDFOR Alpha 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=253;
+					type="I_Soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4740.7461,17.96941,1974.3785};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_A2_AAR";
+						description="INDFOR Alpha 2 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=254;
+					type="I_Soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4727.8306,17.96941,1966.2738};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_A2_AT";
+						description="INDFOR Alpha 2 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=255;
+					type="I_Soldier_LAT_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=251;
+		};
+		class Item10
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4727.2061,17.96941,1981.5939};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_A3_FTL";
+						description="INDFOR Alpha 3 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=257;
+					type="I_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4722.4033,17.96941,1979.436};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_A3_AR";
+						description="INDFOR Alpha 3 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=258;
+					type="I_Soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4729.7813,17.969412,1986.1864};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_A3_AAR";
+						description="INDFOR Alpha 3 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=259;
+					type="I_Soldier_AAR_F";
+					atlOffset=1.9073486e-006;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4716.8657,17.96941,1978.0817};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_A3_AT";
+						description="INDFOR Alpha 3 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=260;
+					type="I_Soldier_LAT_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=256;
+		};
+		class Item11
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4689.0127,17.943161,1910.741};
+						angles[]={6.2803807,2.4512334,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UnitIND_BSL_SL";
+						description="INDFOR Bravo Squad Leader";
+						isPlayable=1;
+					};
+					id=262;
+					type="I_Soldier_SL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4684.1069,17.941214,1908.829};
+						angles[]={0,2.4512334,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_BSL_M";
+						description="INDFOR Bravo Medic";
+						isPlayable=1;
+					};
+					id=263;
+					type="I_medic_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=261;
+		};
+		class Item12
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4732.8931,17.96941,1941.132};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_B1_FTL";
+						description="INDFOR Bravo 1 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=265;
+					type="I_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4728.0903,17.96941,1938.9741};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_B1_AR";
+						description="INDFOR Bravo 1 Automatic Riflemen";
+						isPlayable=1;
+					};
+					id=266;
+					type="I_Soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4735.4683,17.96941,1945.7244};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_B1_AAR";
+						description="INDFOR Bravo 1 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=267;
+					type="I_Soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4722.5527,17.96941,1937.6196};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_B1_AT";
+						description="INDFOR Bravo 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=268;
+					type="I_Soldier_LAT_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=264;
+		};
+		class Item13
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4720.8379,17.96941,1954.24};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_B2_FTL";
+						description="INDFOR Bravo 2 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=270;
+					type="I_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4716.0352,17.96941,1952.082};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_B2_AR";
+						description="INDFOR Bravo 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=271;
+					type="I_Soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4723.4131,17.96941,1958.8324};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_B2_AAR";
+						description="INDFOR Bravo 2 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=272;
+					type="I_Soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4710.4976,17.96941,1950.7277};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_B2_AT";
+						description="INDFOR Bravo 2 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=273;
+					type="I_Soldier_LAT_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=269;
+		};
+		class Item14
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4709.9741,17.96941,1965.6956};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_B3_FTL";
+						description="INDFOR Bravo 3 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=275;
+					type="I_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4705.1719,17.96941,1963.5377};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_B3_AR";
+						description="INDFOR Bravo 3 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=276;
+					type="I_Soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4712.5493,17.96941,1970.288};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_B3_AAR";
+						description="INDFOR Bravo 3 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=277;
+					type="I_Soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4699.6338,17.969412,1962.1832};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_B3_AT";
+						description="INDFOR Bravo 3 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=278;
+					type="I_Soldier_LAT_F";
+					atlOffset=1.9073486e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=274;
+		};
+		class Item15
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4685.7524,17.956224,1915.3741};
+						angles[]={6.2803807,2.4512334,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UnitIND_CSL_SL";
+						description="INDFOR Charlie Squad Leader";
+						isPlayable=1;
+					};
+					id=280;
+					type="I_Soldier_SL_F";
+					atlOffset=-1.9073486e-006;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4680.8467,17.950834,1913.4622};
+						angles[]={6.2803807,2.4512334,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_CSL_M";
+						description="INDFOR Charlie Medic";
+						isPlayable=1;
+					};
+					id=281;
+					type="I_medic_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=279;
+			atlOffset=-1.9073486e-006;
+		};
+		class Item16
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4713.5723,17.96941,1922.7529};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_C1_FTL";
+						description="INDFOR Charlie 1 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=283;
+					type="I_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4708.7695,17.96941,1920.5951};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_C1_AR";
+						description="INDFOR Charlie 1 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=284;
+					type="I_Soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4716.1475,17.96941,1927.3455};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_C1_AAR";
+						description="INDFOR Charlie 1 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=285;
+					type="I_Soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4703.2319,17.967127,1919.2407};
+						angles[]={6.2803807,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_C1_AT";
+						description="INDFOR Charlie 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=286;
+					type="I_Soldier_LAT_F";
+					atlOffset=-1.9073486e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=282;
+		};
+		class Item17
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4701.248,17.96941,1935.9614};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_C2_FTL";
+						description="INDFOR Charlie 2 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=288;
+					type="I_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4696.4453,17.96941,1933.8036};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_C2_AR";
+						description="INDFOR Charlie 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=289;
+					type="I_Soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4703.8232,17.969412,1940.5538};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_C2_AAR";
+						description="INDFOR Charlie 2 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=290;
+					type="I_Soldier_AAR_F";
+					atlOffset=1.9073486e-006;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4690.9072,17.96941,1932.4491};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_C2_AT";
+						description="INDFOR Charlie 2 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=291;
+					type="I_Soldier_LAT_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=287;
+		};
+		class Item18
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4690.1216,17.96941,1947.7515};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_C3_FTL";
+						description="INDFOR Charlie 3 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=293;
+					type="I_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4685.3193,17.986755,1945.5936};
+						angles[]={0,2.4005866,6.2794991};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_C3_AR";
+						description="INDFOR Charlie 3 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=294;
+					type="I_Soldier_AR_F";
+					atlOffset=1.9073486e-006;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4692.6973,17.96941,1952.344};
+						angles[]={0,2.4005866,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_C3_AAR";
+						description="INDFOR Charlie 3 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=295;
+					type="I_Soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4679.7813,17.995033,1944.2393};
+						angles[]={6.2794828,2.4005866,6.2370548};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_C3_AT";
+						description="INDFOR Charlie 3 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=296;
+					type="I_Soldier_LAT_F";
+					atlOffset=-1.9073486e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=292;
+		};
+		class Item19
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1194.1649,57.895721,2658.0671};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this addAction [""Start Camera"",""[] call bis_fnc_camera;"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
+						description="Mission Observer";
+						isPlayable=1;
+					};
+					id=394;
+					type="C_journalist_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=393;
+		};
+		class Item20
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1201.3564,57.895721,2657.825};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this addAction [""Start Camera"",""[] call bis_fnc_camera;"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
+						description="Mission Observer";
+						isPlayable=1;
+					};
+					id=396;
+					type="C_journalist_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=395;
+		};
+		class Item21
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={453.08911,1.7399848,3484.5588};
+			};
+			name="HC";
+			isPlayable=1;
+			id=397;
+			type="HeadlessClient_F";
+			atlOffset=19.02334;
+		};
+		class Item22
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={580.11475,1.7399848,3484.4753};
+			};
+			id=398;
+			type="DAC_Source_Extern";
+			atlOffset=19.02334;
+		};
+		class Item23
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={487.21753,1.7399848,3484.6926};
+			};
+			name="HC2";
+			isPlayable=1;
+			id=422;
+			type="HeadlessClient_F";
+			atlOffset=19.02334;
+		};
+		class Item24
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={520.44751,1.7399848,3484.0759};
+			};
+			name="HC3";
+			isPlayable=1;
+			id=423;
+			type="HeadlessClient_F";
+			atlOffset=19.02334;
+		};
+		class Item25
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4681.2871,17.96941,1923.1218};
+						angles[]={0,2.3600914,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UnitIND_APC1_C";
+						description="INDFOR APC 1 Commander";
+						isPlayable=1;
+					};
+					id=519;
+					type="I_crew_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4676.5757,17.96941,1920.7712};
+						angles[]={0,2.3600914,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_APC1_G";
+						description="INDFOR APC 1 Gunner";
+						isPlayable=1;
+					};
+					id=520;
+					type="I_crew_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4683.6743,17.96941,1927.8147};
+						angles[]={0,2.3600914,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_APC1_D";
+						description="INDFOR APC 1 Driver";
+						isPlayable=1;
+					};
+					id=521;
+					type="I_Soldier_repair_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=518;
+		};
+		class Item26
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4671.0669,17.954779,1914.8612};
+						angles[]={6.2803807,2.3600914,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UnitIND_APC2_C";
+						description="INDFOR APC 2 Commander";
+						isPlayable=1;
+					};
+					id=523;
+					type="I_crew_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4666.3555,17.948153,1912.5106};
+						angles[]={6.2803807,2.3600914,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_APC2_G";
+						description="INDFOR APC 2 Gunner";
+						isPlayable=1;
+					};
+					id=524;
+					type="I_crew_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4673.4541,17.96801,1919.5541};
+						angles[]={6.2803807,2.3600914,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_APC2_D";
+						description="INDFOR APC 2 Driver";
+						isPlayable=1;
+					};
+					id=525;
+					type="I_Soldier_repair_F";
+					atlOffset=-1.9073486e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=522;
+		};
+		class Item27
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4675.7964,17.96941,1927.2632};
+						angles[]={0,2.3600914,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UnitIND_APC3_C";
+						description="INDFOR APC 3 Commander";
+						isPlayable=1;
+					};
+					id=527;
+					type="I_crew_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4671.085,17.96941,1924.9127};
+						angles[]={0,2.3600914,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_APC3_G";
+						description="INDFOR APC 3 Gunner";
+						isPlayable=1;
+					};
+					id=528;
+					type="I_crew_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4678.1836,17.96941,1931.9562};
+						angles[]={0,2.3600914,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_APC3_D";
+						description="INDFOR APC 3 Driver";
+						isPlayable=1;
+					};
+					id=529;
+					type="I_Soldier_repair_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=526;
+		};
+		class Item28
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4665.4478,17.96941,1920.1813};
+						angles[]={0,2.3600914,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UnitIND_APC4_C";
+						description="INDFOR APC 4 Commander";
+						isPlayable=1;
+					};
+					id=531;
+					type="I_crew_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4660.7363,17.963152,1917.8308};
+						angles[]={6.2803807,2.3600914,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_APC4_G";
+						description="INDFOR APC 4 Gunner";
+						isPlayable=1;
+					};
+					id=532;
+					type="I_crew_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4667.835,17.96941,1924.8743};
+						angles[]={0,2.3600914,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_APC4_D";
+						description="INDFOR APC 4 Driver";
+						isPlayable=1;
+					};
+					id=533;
+					type="I_Soldier_repair_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=530;
+		};
+		class Item29
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4686.3682,17.941214,1899.7097};
+						angles[]={0,2.1561997,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_MMG1_AG";
+						description="INDFOR Medium MG Team 1 Spotter";
+						isPlayable=1;
+					};
+					id=617;
+					type="I_Soldier_A_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4682.333,17.941214,1896.3275};
+						angles[]={0,2.125267,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_MMG1_G";
+						description="INDFOR Medium MG Team 1 Gunner";
+						isPlayable=1;
+					};
+					id=618;
+					type="I_Soldier_AR_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=616;
+		};
+		class Item30
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4680.6357,17.941214,1903.0229};
+						angles[]={0,2.125267,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_MAT1_AG";
+						description="INDFOR Medium AT Team 1 Spotter";
+						isPlayable=1;
+					};
+					id=623;
+					type="I_Soldier_AAT_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4676.6006,17.941214,1899.6407};
+						angles[]={0,2.125267,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_MAT1_G";
+						description="INDFOR Medium AT Team 1 Gunner";
+						isPlayable=1;
+					};
+					id=624;
+					type="I_Soldier_AT_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=622;
+		};
+		class Item31
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4675.6602,17.941216,1905.7677};
+						angles[]={0,2.125267,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitIND_MSAM1_AG";
+						description="INDFOR Medium SAM Team 1 Spotter";
+						isPlayable=1;
+					};
+					id=632;
+					type="I_Soldier_AAA_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4671.625,17.941216,1902.3855};
+						angles[]={0,2.125267,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitIND_MSAM1_G";
+						description="INDFOR Medium SAM Team 1 Gunner";
+						isPlayable=1;
+					};
+					id=633;
+					type="I_Soldier_AA_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=631;
+		};
+		class Item32
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4740.1504,20.181456,1992.8829};
+				angles[]={0,2.393214,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=672;
+			type="Cha_BRDM2_DDR_TALIBAN";
+		};
+		class Item33
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4748.5332,20.181456,2000.3883};
+				angles[]={0,2.393214,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=673;
+			type="Cha_BRDM2_DDR_TALIBAN";
+		};
+		class Item34
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4750.8242,20.181456,1981.3677};
+				angles[]={0,2.393214,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=674;
+			type="Cha_BRDM2_DDR_TALIBAN";
+		};
+		class Item35
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4759.5493,20.181456,1988.4658};
+				angles[]={0,2.393214,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=675;
+			type="Cha_BRDM2_DDR_TALIBAN";
+		};
+		class Item36
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4761.5747,20.181456,1969.7365};
+				angles[]={0,2.393214,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=676;
+			type="Cha_BRDM2_DDR_TALIBAN";
+		};
+		class Item37
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4769.4634,20.181456,1976.7211};
+				angles[]={0,2.393214,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=677;
+			type="Cha_BRDM2_DDR_TALIBAN";
+		};
+		class Item38
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4757.6079,20.16976,1946.5854};
+				angles[]={0,0.86910588,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=686;
+			type="RHS_Ural_Civ_03";
+		};
+		class Item39
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4739.0781,20.16976,1931.6927};
+				angles[]={0,0.86910588,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=687;
+			type="RHS_Ural_Civ_03";
+		};
+		class Item40
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4719.4419,20.156816,1915.1566};
+				angles[]={6.2803807,0.86910588,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=688;
+			type="RHS_Ural_Civ_03";
+			atlOffset=0.00070571899;
+		};
+		class Item41
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4695.8853,20.141563,1895.2434};
+				angles[]={0,0.86910588,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=689;
+			type="RHS_Ural_Civ_03";
+		};
+	};
+};
